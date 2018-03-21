@@ -59,7 +59,12 @@
                         <li class="sub-app"><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-converter"><?php pll_e('CAE Converter - CAE model converter'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
-                        <li><a href="/products/private_cloud"><?php pll_e('Private Cloud Solutions'); ?></a></li>
+                        <?php if(pll_current_language()=="zh"): ?>
+                        <li><a href="/products/private_cloud_zh"><?php pll_e('Private Cloud Solutions') ?> </a></li>
+                        <?php else: ?>
+                        <li><a href="/products/private_cloud"><?php pll_e('Private Cloud Solutions') ?> </a></li>
+                        <?php endif ?>
+                                             
                     </ul>
                 </li>
                 <li class="dropdown" data-active = "model-library">
