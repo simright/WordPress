@@ -51,7 +51,7 @@ var videoPlayButton,
     video = document.getElementsByTagName('video')[0],
     videoMethods = {
         renderVideoPlayButton: function() {
-            if (videoWrapper.contains(video)) {
+            if (videoWrapper && videoWrapper.contains(video)) {
 				this.formatVideoPlayButton()
                 video.classList.add('has-media-controls-hidden')
                 videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
