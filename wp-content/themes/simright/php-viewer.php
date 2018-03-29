@@ -1,6 +1,6 @@
 <?php   
 /*   
-Template Name: toptimizer  
+Template Name: viewer  
 */   
 ?>
 <!DOCTYPE html>
