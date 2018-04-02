@@ -1895,6 +1895,120 @@ img.aligncenter,
 .site-tutotial-video .video-item .left{
     width: 45%;
 }
+/* 结构分析专题 */
+.page-strctural{
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #E9F1F4;
+    font-family: "PingFangSC-Regular", Arial, Helvetica, sans-serif
+}
+.page-strctural .banner img{
+    width: 100%;
+}
+.page-strctural .contain-box{
+    max-width: 1200px;
+    padding:0 10px;
+    margin: 0 auto;
+}
+.page-strctural .contain-box section{
+    padding-bottom: 50px;
+}
+.page-strctural .contain-box h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    color: #1168AB;
+    font-size: 36px;
+}
+.page-strctural .contain-box h3{
+    margin: 0;
+    font-size: 36px;
+    color: #1168AB;
+    font-weight: bold;
+    text-align:left;
+}
+.page-strctural .contain-box h3 span{
+    font-size:24px;
+    color:#797979;
+    font-weight: normal;
+}
+.page-strctural .contain-box h2 span{
+    display: inline-block;
+    padding: 5px 35px;
+    background-color: #1168AB;
+    color:#fff;
+}
+.page-strctural .contain-box section img{
+    margin: 0 auto;
+}
+.page-strctural .contain-box >section >div{
+    margin: 0 auto;
+    padding: 40px 50px;
+    font-size: 18px;
+    color: #797A7A;
+    line-height: 24px;
+    background-color: #fff;
+}
+.page-strctural .contain-box .introduction{
+    border: 1px dashed #E9F1F4;
+    text-indent: 2em;
+}
+
+.page-strctural .siema{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.page-strctural .siema button{
+    width:0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: -50px;
+}
+.page-strctural .siema .pre{
+    border: 20px solid #fff;
+    border-color: #fff rgba(17,104,171,0.3) #fff #fff;
+    outline: none;
+}
+.page-strctural .siema .next{
+    border: 20px solid #fff;
+    border-color: #fff #fff #fff rgba(17,104,171,0.3);
+    outline: none;
+}
+.page-strctural .contain-box .video-items{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.page-strctural .contain-box .video-items img{
+    width: 100%;
+}
+
+.page-strctural .contain-box .example .siema{
+    width: 100%;
+}
+
+.page-strctural .contain-box .example-item{
+    display: block;
+    color: #464646;
+    padding: 7px;
+    border: 1px solid #EFEFEF;
+    text-align: center;
+    margin: 0 5px;
+}
+.page-strctural .contain-box .example-item p{
+    margin-top: 10px;
+}
+
+.page-strctural .contain-box .example-item img{
+    width: 100%;
+    background-color: #E5F5FF;
+}
+
 @media (max-width: 991px) {
     .site-tutotial-video .video-item >div{
         display: flex;
@@ -2171,6 +2285,25 @@ img.aligncenter,
 
 #loadmore {
     display: none
+}
+
+@media (max-width: 991px) {
+    /* 结构分析专题 */
+    .page-strctural .contain-box h2{
+        font-size: 24px;
+    }
+    .page-strctural .contain-box h2 img{
+        display: none;
+    }
+    .page-strctural .contain-box h3{
+        font-size: 24px;
+    }
+    .page-strctural .contain-box h3 span{
+        font-size:18px;
+    }
+    .page-strctural .contain-box >section >div{
+        padding: 30px 10px;
+    }
 }
 
 
