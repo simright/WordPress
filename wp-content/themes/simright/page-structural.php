@@ -5,7 +5,6 @@ Template Name: structural
 ?>
 <?php get_header(); ?>
 <section class="main-box page-strctural">
-
     <section class="banner">
         <img src="https://oss.simright.com/images/cms_structural_bg.jpg?v1.2" alt="front">
     </section>

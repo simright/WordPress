@@ -50,19 +50,8 @@
 <script src="https://oss.simright.com/static/siema.min.js"></script>
 <script>
     
-    configSwiper()
-
-    function configSwiper(){
-        var perPage=  null;
-        if (document.body.clientWidth<640){
-            perPage = 1;
-        }else{
-            perPage = 3;
-        }
-        initSwiper(perPage);
-    }
-
-    function initSwiper(perPage){
+    initSwiper()
+    function initSwiper(){
         
         if($('#pre-process')){
             //前处理
@@ -70,7 +59,10 @@
                 selector: '#pre-process .contain',
                 duration: 200,
                 easing: 'ease-out',
-                perPage: perPage,
+                perPage: {
+                    640: 1, // 2 items for viewport wider than 800px
+                    1240: 3 ,
+                },
                 startIndex: 0,
                 draggable: true,
                 multipleDrag: true,
@@ -89,7 +81,10 @@
                 selector: '#next-process .contain',
                 duration: 200,
                 easing: 'ease-out',
-                perPage: perPage,
+                perPage: {
+                    640: 1, // 2 items for viewport wider than 800px
+                    1240: 3 ,
+                },
                 startIndex: 0,
                 draggable: true,
                 multipleDrag: true,
@@ -108,7 +103,10 @@
                 selector: '#solve .contain',
                 duration: 200,
                 easing: 'ease-out',
-                perPage: perPage,
+                perPage: {
+                    640: 1, // 2 items for viewport wider than 800px
+                    1240: 3 ,
+                },
                 startIndex: 0,
                 draggable: true,
                 multipleDrag: true,
@@ -127,7 +125,10 @@
                 selector: '#example .contain',
                 duration: 200,
                 easing: 'ease-out',
-                perPage: perPage + 1,
+                perPage: {
+                    640: 2, // 2 items for viewport wider than 800px
+                    1240: 4 ,
+                },
                 startIndex: 0,
                 draggable: true,
                 multipleDrag: true,
