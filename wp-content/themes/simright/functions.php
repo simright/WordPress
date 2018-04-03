@@ -183,6 +183,16 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('Video Library','Video Library');
 	pll_register_string('Blog','Blog');
 	pll_register_string('Nav News','News');
+	pll_register_string('Sign In','Sign In');
+	pll_register_string('Sign Up','Sign Up');
+	pll_register_string('Profile','Profile');
+	pll_register_string('Setting','Setting');
+	pll_register_string('My Projects','My Projects');
+	pll_register_string('My Models','My Models');
+	pll_register_string('Wallet','Wallet');
+	pll_register_string('Usage Overview','Usage Overview');
+	pll_register_string('Logout','Logout');
+	
 	
 
 	pll_register_string('Blog','Blog');

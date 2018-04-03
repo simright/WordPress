@@ -49,6 +49,36 @@
 <script src="https://oss.simright.com/static/jquery.min.js"></script>
 <script src="https://oss.simright.com/static/bootstrap.min.js"></script>
 <script>
+
+$(function(){
+    $.ajax({
+        url:'/',
+        success:function(data){
+            var logined  =$(data).find('.meat-user-logined').html()
+            if(logined == "False"){
+                $('.sign-btn').removeClass('hide');
+                var locationPathname = window.location.pathname;
+                $('#signIn').on('click',function(){
+                    window.location.href = '/login?next=' + locationPathname;
+                })
+                $('#signIn-sm').on('click',function(){
+                    window.location.href = '/login?next=' + locationPathname;
+                })
+            }else{
+                $('.sign-btn').hide();
+                $('.login .dropdown').removeClass('hide')
+                var userName = $(data).find('.meta-user-name').html();
+                var userEmail = $(data).find('.meta-user-email').html();
+                var userId = $(data).find('.meta-user-id').html();
+                var userAvatar = $(data).find('.meta-user-avatar').html();
+                $('.avatar').attr('src',userAvatar)
+                $('.user-name').html(userName)
+            }
+            
+        }
+    })
+})
+
 $(document).on('click','#pagination a:not(.noajx)',function(){
     var _this = $(this);
     var next = _this.attr("href").replace('?ajx=container','');
