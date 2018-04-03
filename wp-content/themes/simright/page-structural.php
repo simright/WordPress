@@ -164,11 +164,26 @@ Template Name: structural
                 <div class="swiper siema" id="example" >
                     <button class="pre"></button>
                     <div class="contain" >
-                        <a class="example-item" href="/resources/public-projects/cdeb208d-f8f4-3ef4-a17c-2ab52a20760d?app_name=simulator"><img src="https://oss.simright.com/cover/cdeb208d-f8f4-3ef4-a17c-2ab52a20760d"><p> Wheel Hub </p></a>
-                        <a class="example-item" href="/resources/public-projects/23cfb4ec-9d72-3972-b53d-5bdbf8eb6ff4?app_name=simulator"><img src="https://oss.simright.com/cover/23cfb4ec-9d72-3972-b53d-5bdbf8eb6ff4"><p> Oil Cap </p></a>
-                        <a class="example-item" href="/resources/public-projects/7d51f0b0-cbca-3fd3-9608-7d421a5e4903?app_name=toptimizer"><img src="https://oss.simright.com/cover/7d51f0b0-cbca-3fd3-9608-7d421a5e4903"><p> Lightweight Flat </p></a>
-                        <a class="example-item" href="/resources/public-projects/7d51f0b0-cbca-3fd3-9608-7d421a5e4903?app_name=toptimizer"><img src="https://oss.simright.com/cover/7d51f0b0-cbca-3fd3-9608-7d421a5e4903"><p> Lightweight Flat </p></a>
-                        <a class="example-item" href="/resources/public-projects/7d51f0b0-cbca-3fd3-9608-7d421a5e4903?app_name=toptimizer"><img src="https://oss.simright.com/cover/7d51f0b0-cbca-3fd3-9608-7d421a5e4903"><p> Lightweight Flat </p></a>
+                        <a class="example-item" href="/resources/public-projects/82d8f852-af56-3d43-b579-1a6c2290092a?app_name=simulator">
+                            <img src="https://oss.simright.com/cover/82d8f852-af56-3d43-b579-1a6c2290092a">
+                            <p> Key </p>
+                        </a>
+                        <a class="example-item" href="/resources/public-projects/18be8d3f-4ba6-3592-9f98-a7fe82d20f89?app_name=simulator">
+                            <img src="https://oss.simright.com/cover/18be8d3f-4ba6-3592-9f98-a7fe82d20f89">
+                            <p> 座椅 </p>
+                        </a>
+                        <a class="example-item" href="/resources/public-projects/cdeb208d-f8f4-3ef4-a17c-2ab52a20760d?app_name=simulator">
+                            <img src="https://oss.simright.com/cover/cdeb208d-f8f4-3ef4-a17c-2ab52a20760d">
+                            <p> Wheel hub </p>
+                        </a>
+                        <a class="example-item" href="/resources/public-projects/0043b074-2c65-39b9-bbfb-183768b8a581?app_name=simulator">
+                            <img src="https://oss.simright.com/cover/0043b074-2c65-39b9-bbfb-183768b8a581">
+                            <p> Bottle </p>
+                        </a>
+                        <a class="example-item" href="/resources/public-projects/bf7bb567-2528-3c13-b868-3117082f2835?app_name=simulator">
+                            <img src="https://oss.simright.com/cover/bf7bb567-2528-3c13-b868-3117082f2835">
+                            <p> 齿轮 </p>
+                        </a>
                     </div>
                     <button class="next"></button>
                 </div>
