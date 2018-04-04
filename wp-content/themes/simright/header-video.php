@@ -44,7 +44,52 @@
     <header class="highlight">
         <section>
             <a href="/" class="logo"><img src="https://oss.simright.com/images/logo.svg" alt="simright"></a> 
-            <div class="login">
+            <div class="login hidden-xs hidden-sm">
+                <div class="sign-btn hide">
+                    <a id='signIn' class="btn btn-nobg btn-round"><?php pll_e('Sign In'); ?></a>
+                    <?php if(pll_current_language()=="zh"): ?>
+                    <a href="/phone_register" class="btn btn-round"><b><?php pll_e('Sign Up'); ?></b></a></p> 
+                    <?php else: ?>
+                    <a href="/register" class="btn btn-round"><b><?php pll_e('Sign Up'); ?></b></a></p> 
+                    <?php endif ?>
+                </div>
+                <li class="dropdown hide" data-logined = "" data-email = "">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar" src="" alt="">                             
+                        <span class="text-overflow user-name"></span>
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/user/profile"><?php pll_e('Profile'); ?></a></li>
+                        <li><a href="/user/settings"><?php pll_e('Setting'); ?></a></li>
+                        <li><a href="/user/projects"><?php pll_e('My Projects'); ?></a></li>
+                        <li><a href="/user/models"><?php pll_e('My Models'); ?></a></li>
+                        <li><a href="/user/wallet"><?php pll_e('Wallet'); ?></a></li>
+                        <li><a href="/user/usage-overview"><?php pll_e('Usage Overview'); ?></a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="/logout"><?php pll_e('Logout'); ?></a></li>
+                    </ul>
+                </li>
+            </div> 
+            <div class="login hidden-md hidden-lg">
+                <div class="sign-btn hide">
+                    <a id='signIn-sm'><img class="avatar" width="40" height="40" src="https://oss.simright.com/images/header-user-avatar.svg" alt=""> </a>
+                </div>
+                <li class="dropdown hide" data-logined = "" data-email = "">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img class="avatar" src="" alt="">                             
+                    </a>
+                    <ul class="dropdown-menu position-right" role="menu">
+                        <li><a href="/user/profile"><?php pll_e('Profile'); ?></a></li>
+                        <li><a href="/user/settings"><?php pll_e('Setting'); ?></a></li>
+                        <li><a href="/user/projects"><?php pll_e('My Projects'); ?></a></li>
+                        <li><a href="/user/models"><?php pll_e('My Models'); ?></a></li>
+                        <li><a href="/user/wallet"><?php pll_e('Wallet'); ?></a></li>
+                        <li><a href="/user/usage-overview"><?php pll_e('Usage Overview'); ?></a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li><a href="/logout"><?php pll_e('Logout'); ?></a></li>
+                    </ul>
+                </li>
             </div> 
             <nav class="navbar navbar-default" role="navigation">
                 <li data-active = "index">

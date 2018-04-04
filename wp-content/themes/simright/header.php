@@ -66,7 +66,6 @@
                     </ul>
                 </li>
             </div> 
-
             <div class="login hidden-md hidden-lg">
                 <div class="sign-btn hide">
                     <a id='signIn-sm'><img class="avatar" width="40" height="40" src="https://oss.simright.com/images/header-user-avatar.svg" alt=""> </a>
