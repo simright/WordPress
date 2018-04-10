@@ -16,6 +16,10 @@
     {
         include(TEMPLATEPATH . '/single-blogs.php');
     }
+    elseif ( $rootCategory === 'partners')
+    {
+        include(TEMPLATEPATH . '/single-partners.php');
+    }
     else{
         echo $rootCategory;
         return;

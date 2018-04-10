@@ -124,6 +124,7 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
                         <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
+                        <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
                     </ul>
                 </li>
                 <li data-active = "price">

@@ -178,6 +178,8 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('Public Projects','Public Projects');
 	pll_register_string('Model Library','Model Library');
 	pll_register_string('Pricing','Pricing');
+	pll_register_string('Partners','Partners');
+	pll_register_string('PARTNER','PARTNER');
 
 	pll_register_string('Learning','Learning');
 	pll_register_string('Video Library','Video Library');
@@ -216,6 +218,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('xiang guan xin wen','相关新闻');
 	pll_register_string('fan hui shi pin zhong xin','返回视频中心');
 	pll_register_string('fan hui bo ke zhong xin','返回博客中心');
+	pll_register_string('fan hui he zuo huo ban zhong xin','返回合作伙伴中心');
 	pll_register_string('tong lei jiao cheng','同类教程');
 	pll_register_string('Comments','Comments');
 	pll_register_string('Watch Now','Watch Now');

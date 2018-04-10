@@ -790,7 +790,9 @@ footer .footer .wechat_qr_code {
 .news-list .banner,
 .joinus-list .banner,
 .blog-list .banner,
-.feature-list .banner {
+.feature-list .banner,
+.partner-list .banner,
+.partners-details .banner{
     height: 280px;
     background-image: url("https://oss.simright.com/images/about_us_banner.png");
     background-size: cover;
@@ -831,6 +833,11 @@ footer .footer .wechat_qr_code {
 .feature-list .about-feature table {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.partner-list .banner,
+.partners-details .banner{
+    background-image: url("https://oss.simright.com/images/partner-banner.png");
 }
 
 .video-list .banner {
@@ -886,7 +893,9 @@ footer .footer .wechat_qr_code {
 .news-list .banner h2,
 .joinus-list .banner h2,
 .blog-list .banner h2,
-.feature-list .banner h2 {
+.feature-list .banner h2,
+.partner-list .banner h2, 
+.partners-details .banner h2{
     height: 58px;
     line-height: 58px;
     width: 236px;
@@ -901,7 +910,9 @@ footer .footer .wechat_qr_code {
 .video-list .banner p,
 .news-list .banner p,
 .joinus-list .banner p,
-.blog-list .banner p {
+.blog-list .banner p ,
+.partner-list .banner p,
+.partners-details .banner p{
     font-size: 20px;
 }
 
@@ -1435,6 +1446,76 @@ footer .footer .wechat_qr_code {
     -ms-flex-align: flex-start;
     align-items: flex-start;
 }
+
+
+/* 合作伙伴 */
+.partner-list .about-partner{
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.partner-list .partner-item{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    margin: 15px 8px;
+    width: 280px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+.partner-list .partner-item .img-wrap{
+    width: 280px;
+    height: 207px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.partner-list .partner-item .img-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.partner-list .partner-item span{
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    color: #1972A9;
+    font-weight: bold;
+    text-align: center;
+}
+
+.partners-details .contain-box{
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 40px;
+}
+.partners-details .partner-logo{
+    max-width: 280px;
+    float: left;
+    margin-right: 20px;
+}
+.partners-details .post-header{
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #1972A9;
+}
+.partners-details .main-contain>a{
+    display: block;
+    text-align: right;
+}
+.partners-details .list-contain{
+    color:#7F8081;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+
+
+/* 评论 */
 
 .comment-content p {
     padding-left: 40px;

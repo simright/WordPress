@@ -20,6 +20,10 @@
     {
     include(TEMPLATEPATH . '/category-features.php');
     }
+    elseif ( $rootCategory === 'partners')
+    {
+    include(TEMPLATEPATH . '/category-partners.php');
+    }
     else{
         echo $rootCategory;
         return;
