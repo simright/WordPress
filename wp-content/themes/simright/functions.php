@@ -108,7 +108,14 @@ if ( ! function_exists( 'simright_comment' ) ) :
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
 			<header class="comment-meta comment-author vcard">
 				<?php
-					echo get_avatar( $comment, 44 );
+					if(get_comment_meta($comment->comment_ID, 'avatar', true )){
+						printf(
+							'<img alt="" src="%1$s" class="avatar photo avatar-default">',
+							get_comment_meta($comment->comment_ID, 'avatar', true )
+						);
+					}else{
+						echo get_avatar( $comment, 44 );
+					}
 					printf(
 						'<cite><b class="fn">%1$s</b> %2$s</cite>',
 						get_comment_author_link(),
@@ -279,4 +286,20 @@ function enable_more_buttons($buttons) {
      return $new_btn;   
      }   
 add_filter("mce_buttons", "enable_more_buttons"); 
+
+//头像
+add_filter( 'avatar_defaults', 'wpb_new_gravatar' );
+function wpb_new_gravatar ($avatar_defaults) {
+	$myavatar = 'https://oss.simright.com/avatar/default_avatar';
+	$avatar_defaults[$myavatar] = " Simright Default Gravatar";
+	return $avatar_defaults;
+}
+
+function add_comment_meta_values($comment_id) {
+	    if(isset($_POST['avatar'])) {
+			$avatar = wp_filter_nohtml_kses($_POST['avatar']);
+			add_comment_meta($comment_id, 'avatar', $avatar, false);
+		}
+	}
+add_action ('comment_post', 'add_comment_meta_values', 1);
 ?>

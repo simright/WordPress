@@ -73,8 +73,13 @@ $(function(){
                 var userAvatar = $(data).find('.meta-user-avatar').html();
                 $('.avatar').attr('src',userAvatar)
                 $('.user-name').html(userName)
+                if($('#author') && $('#author').length > 0){
+                    $('#author').val(userName)
+                }
+                if($('#avatar') && $('#avatar').length > 0){
+                    $('#avatar').val(userAvatar)
+                }
             }
-            
         }
     })
 })
