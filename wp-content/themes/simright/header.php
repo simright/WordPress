@@ -100,7 +100,7 @@
                         <li><a href="/apps"><?php pll_e('Public Cloud Apps'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-simulator"><?php pll_e('Simulator - Structural Analysis'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-toptimizer"><?php pll_e('Toptimizer - Topology Optimization'); ?></a></li>
-                        <li class="sub-app"><a href="/apps/simright-webmesher"><b  data-i18n="base.nav.webmesher"><?php pll_e('WebMesher – Pre-processor'); ?></b><b style="font-size: 12px;position: relative;top: -6px;left: 5px;color: #ec4114;">Beta</b></a></li>
+                        <li class="sub-app"><a href="/apps/simright-webmesher"><b><?php pll_e('WebMesher – Pre-processor'); ?></b><b style="font-size: 12px;position: relative;top: -6px;left: 5px;color: #ec4114;">Beta</b></a></li>
                         <li class="sub-app"><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-converter"><?php pll_e('CAE Converter - CAE model converter'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>

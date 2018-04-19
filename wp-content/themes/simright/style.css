@@ -702,7 +702,7 @@ body>header #open-google-translate:hover b {
 }
 
 footer {
-    background: #fff;
+    background-color: #fff;
 }
 
 footer .copyright {
@@ -712,56 +712,62 @@ footer .copyright {
 
 footer .copyright p {
     margin: 0;
-    height: 16px;
     line-height: 16px;
 }
 
 footer .footer {
     max-width: 1200px;
     margin: 0 auto;
-    height: 330px;
-    padding-top: 58px;
+    padding: 80px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: unset;
+    flex-wrap: wrap;
+}
+footer .footer >div{
+    padding-right: 10px;
 }
 
-footer .footer h4 {
-    font-size: 24px;
-    line-height: 24px;
-    color: #fff;
-    margin: 0;
-    margin-bottom: 14px;
-}
-
-footer .footer p {
+footer .footer ul,
+footer .footer li {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
 footer .footer a {
-    color: #CAE6F7;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    color: #D5E7FE;
+    line-height: 20px;
 }
 
-footer .footer-sales {
-    margin-bottom: 46px;
-}
-
-footer .footer-products p {
+footer .footer h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
-footer .footer-follow {
-    width: 170px;
+footer .footer li {
+    padding-bottom: 10px;
 }
 
-footer .footer-follow img {
-    padding: 6px 3px;
+footer .footer-follow>div {
+    max-width: 140px;
+    margin-bottom: 7px;
+}
+
+footer .footer-follow>div img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 13px;
 }
 
 footer .footer .wechat_qr_code {
-    height: 120px;
+    width: 100px;
 }
 
 .error-wp .title {
@@ -2377,58 +2383,11 @@ img.aligncenter,
 
 @media (max-width: 991px) {
     footer .footer {
-        height: auto;
-        padding: 58px .4rem 58px .4rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        justify-content: space-between;
-        -webkit-box-align: flex-start;
-        -ms-flex-align: flex-start;
-        align-items: flex-start;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     footer .footer h4 {
-        font-size: 20px;
-        line-height: 20px;
-        color: #fff;
-        margin: 0;
-        margin-bottom: .12rem;
-    }
-    footer .footer p {
-        margin: 0;
-    }
-    footer .footer a {
-        color: #CAE6F7;
-        font-size: 12px;
-        line-height: 14px;
-    }
-    footer .footer>div {
-        margin-bottom: .6rem;
-    }
-    footer .footer-sales {
-        margin-bottom: .4rem;
-    }
-    footer .footer-products {
-        margin-bottom: .4rem;
-    }
-    footer .footer-products p {
-        margin-bottom: .2rem;
-    }
-    footer .footer-follow {
-        width: 100%;
-    }
-    footer .footer-follow img {
-        padding: .06rem .03rem;
+        padding-top: 20px;
     }
 }
 
