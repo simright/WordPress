@@ -20,6 +20,10 @@
     {
         include(TEMPLATEPATH . '/single-partners.php');
     }
+    elseif ( $rootCategory === 'customer-story')
+    {
+    include(TEMPLATEPATH . '/single-customer-story.php');
+    }
     else{
         echo $rootCategory;
         return;

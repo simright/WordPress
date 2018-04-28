@@ -226,6 +226,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('fan hui shi pin zhong xin','返回视频中心');
 	pll_register_string('fan hui bo ke zhong xin','返回博客中心');
 	pll_register_string('fan hui he zuo huo ban zhong xin','返回合作伙伴中心');
+	pll_register_string('fan hui yong hu gu shi zhong xin','返回用户故事中心');
 	pll_register_string('tong lei jiao cheng','同类教程');
 	pll_register_string('Comments','Comments');
 	pll_register_string('Watch Now','Watch Now');
@@ -234,6 +235,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('blog','blog');
 	pll_register_string('FEATURES','FEATURES');
 	pll_register_string('Features','Features');
+	pll_register_string('FEATURED CUSTOMER STORIES','FEATURED CUSTOMER STORIES');
 }
 
 /** 搜索表单 */

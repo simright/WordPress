@@ -24,6 +24,10 @@
     {
     include(TEMPLATEPATH . '/category-partners.php');
     }
+    elseif ( $rootCategory === 'customer-story')
+    {
+    include(TEMPLATEPATH . '/category-customer-story.php');
+    }
     else{
         echo $rootCategory;
         return;
