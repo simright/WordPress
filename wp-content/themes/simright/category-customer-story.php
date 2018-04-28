@@ -5,55 +5,41 @@
             <button class="pre"></button>
             <div class="contain" >
                 <?php if(pll_current_language()=="zh"): ?>
-                <div class="story-item">
-                    <div class="img-wrap">
-                        <img src="<?php echo get_thumbnail_src(54) ?>" alt="">
-                    </div>
-                    <div>
-                        <h2><?php echo get_post(54)->post_title ?></h2>
-                        <p><?php echo get_post(54)->post_excerpt ?></p>
-                        <button>
-                            <a href="">阅读故事</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="story-item">
-                    <div class="img-wrap">
-                        <img src="<?php echo get_thumbnail_src(54) ?>" alt="">
-                    </div>
-                    <div>
-                        <h2><?php echo get_post(54)->post_title ?></h2>
-                        <p><?php echo get_post(54)->post_excerpt ?></p>
-                        <button>
-                            <a href="">阅读故事</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="story-item">
-                    <div class="img-wrap">
-                        <img src="<?php echo get_thumbnail_src(54) ?>" alt="">
-                    </div>
-                    <div>
-                        <h2><?php echo get_post(54)->post_title ?></h2>
-                        <p><?php echo get_post(54)->post_excerpt ?></p>
-                        <button>
-                            <a href="">阅读故事</a>
-                        </button>
-                    </div>
-                </div>
+                    <?php $blog_cat_ID = get_cat_ID("用户故事推荐"); ?>
+                    <?php query_posts("cat=$blog_cat_ID"); ?>
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <div class="story-item">
+                            <div class="img-wrap">
+                                <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+                            </div>
+                            <div>
+                                <h2><?php the_title(); ?></h2>
+                                <?php the_excerpt(); ?>
+                                <button>
+                                    <a href="<?php the_permalink(); ?>">阅读故事</a>
+                                </button>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                 <?php else: ?>
-                <div class="story-item">
-                    <div class="img-wrap">
-                        <img src="<?php echo get_thumbnail_src(54) ?>" alt="">
-                    </div>
-                    <div>
-                        <h2><?php echo get_post(54)->post_title ?></h2>
-                        <p><?php echo get_post(54)->post_excerpt ?></p>
-                        <button>
-                            <a href="">阅读故事</a>
-                        </button>
-                    </div>
-                </div>
+                    <?php $blog_cat_ID = get_cat_ID("customer story recommended"); ?>
+                    <?php query_posts("cat=$blog_cat_ID"); ?>
+                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        <div class="story-item">
+                            <div class="img-wrap">
+                                <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+                            </div>
+                            <div>
+                                <h2><?php the_title(); ?></h2>
+                                <?php the_excerpt(); ?>
+                                <button>
+                                    <a href="<?php the_permalink(); ?>">Read the story</a>
+                                </button>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                 <?php endif ?>
             </div>
             <button class="next"></button>
