@@ -14,7 +14,7 @@
                     <li><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
                     <li><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                     <?php if(pll_current_language()=="zh"): ?>
-                    <li class="sub-app"><a href="http://www.easypdm.cn/">EasyPDM - 在线三维数据协同</a></li>
+                    <li class="sub-app"><a href="http://www.easypdm.cn" target="_blank">EasyPDM - 在线三维数据协同</a></li>
                     <?php endif ?>
                 </ul>
             </div>

@@ -106,7 +106,7 @@
                         <li class="sub-app"><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                         <?php if(pll_current_language()=="zh"): ?>
-                        <li class="sub-app"><a href="http://www.easypdm.cn/">EasyPDM - 在线三维数据协同</a></li>
+                        <li class="sub-app"><a href="http://www.easypdm.cn"  target="_blank">EasyPDM - 在线三维数据协同</a></li>
                         <li><a href="/products/private_cloud_zh"><?php pll_e('Private Cloud Solutions') ?> </a></li>
                         <li><a href="/products/consulting-services">咨询服务</a></li>
                         <?php else: ?>
