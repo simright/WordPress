@@ -50,7 +50,7 @@ Template Name: furniture
                 </div>
                 <h4>椅子·应用案例</h4>
             </div>
-            <div class="table-list">
+            <div class="list">
                 <?php $blog_cat_ID = get_cat_ID("椅子"); ?>
                 <?php query_posts("cat=$blog_cat_ID"); ?>
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
