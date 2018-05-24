@@ -83,7 +83,7 @@
                 onInit: () => {},
                 onChange: () => {},
             });
-            $('.prev').on('click', () => preProcess.prev());
+            $('.pre').on('click', () => preProcess.prev());
             $('.next').on('click', () => preProcess.next());
         }
     </script>
