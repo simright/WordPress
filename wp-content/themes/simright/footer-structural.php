@@ -22,6 +22,7 @@
                 <h4><?php pll_e('Resources'); ?></h4>
                 <ul>
                     <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
+                    <li><a href="/<?php echo pll_current_language() ?>/category/customer-story"><?php pll_e('User Stories') ?></a></li>
                     <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
                     <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
                 </ul>

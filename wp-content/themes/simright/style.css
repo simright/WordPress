@@ -2397,6 +2397,11 @@ img.aligncenter,
     font-size: 12px;
     line-height: 12px;
 }
+.customer-list .customer-item p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .customer-list .img-wrap{
     height: 207px;
     width: 100%;

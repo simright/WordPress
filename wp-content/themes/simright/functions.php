@@ -186,7 +186,8 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('Model Library','Model Library');
 	pll_register_string('Pricing','Pricing');
 	pll_register_string('Partners','Partners');
-	pll_register_string('PARTNER','PARTNER');
+	pll_register_string('Partners','Partners');
+	pll_register_string('user-stories','User Stories');
 
 	pll_register_string('Learning','Learning');
 	pll_register_string('Video Library','Video Library');

@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="https://oss.simright.com/img/favicon.ico">
     <link rel="stylesheet" href="https://oss.simright.com/static/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v8.0" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v10.0" type="text/css" media="screen" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -125,6 +125,7 @@
                     </a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
+                        <li><a href="/<?php echo pll_current_language() ?>/category/customer-story"><?php pll_e('User Stories') ?></a></li>
                         <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
                         <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
                     </ul>
