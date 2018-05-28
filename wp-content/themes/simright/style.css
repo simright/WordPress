@@ -800,7 +800,7 @@ footer .footer .wechat_qr_code {
 .partner-list .banner,
 .partners-details .banner{
     height: 280px;
-    background-image: url("https://oss.simright.com/images/about_us_banner.png");
+    background-image: url("https://oss.simright.com/images/about_us_banner.jpg");
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -822,10 +822,17 @@ footer .footer .wechat_qr_code {
     flex-direction: column;
     color: #fff;
 }
-
-.blog-list .banner {
-    background-image: none;
-    background-color: #1972A9;
+.joinus-list .banner{
+    background-image: url("https://oss.simright.com/images/join_us_banner.jpg");
+}
+.news-list .banner{
+    background-image: url("https://oss.simright.com/images/news_list_banner.jpg");
+}
+.feature-list .banner{
+    background-image: url("https://oss.simright.com/images/features_banner.jpg");
+}
+.blog-list .banner{
+    background-image: url("https://oss.simright.com/images/blog_list_banner.jpg");
 }
 
 .feature-list .about-feature {
