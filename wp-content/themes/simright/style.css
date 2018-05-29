@@ -919,6 +919,9 @@ footer .footer .wechat_qr_code {
     padding: 0;
     margin-bottom: 26px;
 }
+.partners-details .banner h2{
+    width: auto;
+}
 
 .video-list .banner p,
 .news-list .banner p,
@@ -2542,6 +2545,25 @@ img.aligncenter,
 }
 
 
+
+@media (max-width: 991px) {
+    .customer-list .banner{
+        height: 300px;
+    }
+    .customer-list .siema{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .customer-list .siema .img-wrap,.customer-list .siema .pre,.customer-list .siema .next{
+        display: none;
+    }
+    .customer-list .siema .contain button{
+        padding: 5px;
+    }
+    .customer-list .about-customer{
+        justify-content: center;
+    }
+}
 
 @media (max-width: 650px) {
     .page-furniture .title img{
