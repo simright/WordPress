@@ -61,9 +61,9 @@
                     <a href="https://www.youtube.com/channel/UCEiDfhLf7jFWJkPhhdwpW3g" target="_blank"><img src="https://oss.simright.com/images/contact-youtube.svg" alt="Youtube"></a>
                 </div>
                 <?php $current_lan = pll_current_language(); if($current_lan == 'en'): ?>
-                    <img src="https://oss.simright.com/images/rq_code.png" alt="" class="wechat_qr_code hide ">
+                    <img src="https://oss.simright.com/images/rq_code_blue.png" alt="" class="wechat_qr_code hide ">
                 <?php else : ?>
-                    <img src="https://oss.simright.com/images/rq_code.png" alt="" class="wechat_qr_code ">
+                    <img src="https://oss.simright.com/images/rq_code_blue.png" alt="" class="wechat_qr_code ">
                 <?php endif; ?>
             </div>
         </div>
