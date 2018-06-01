@@ -912,12 +912,13 @@ footer .footer .wechat_qr_code {
     height: 58px;
     line-height: 58px;
     width: 236px;
-    border: 1px solid #fff;
+    border: 1px solid #C5E7F8;
     font-size: 28px;
     text-align: center;
     margin: 0;
     padding: 0;
     margin-bottom: 26px;
+    border-radius: 5px;
 }
 .partners-details .banner h2{
     width: auto;
