@@ -246,10 +246,6 @@ body>header {
     border-bottom: 1px solid #dedcdc;
 }
 
-body>header.vcade {
-    border-bottom: none;
-}
-
 body>header>section {
     position: relative;
     margin: 0 auto;
@@ -284,7 +280,7 @@ body>header .navbar {
     height: 100%;
     padding: 0;
     margin: 0;
-    margin-right: 233px;
+    margin-right: 272px;
     -ms-flex: 1;
     flex: 1;
     display: -webkit-box;
@@ -350,6 +346,7 @@ body>header .login {
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
+    display: flex;
 }
 
 body>header .login .btn-nobg a {
@@ -405,6 +402,179 @@ body>header .login .user-name {
     max-width: 120px;
 }
 
+body>header .login .infomation {
+    width: 46px;
+}
+
+body>header .login .infomation>a {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    position: relative;
+    color: #fff;
+}
+
+body>header .login .infomation>a:hover {
+    background-color: unset;
+}
+
+body>header .login .infomation>a img {
+    width: 20px;
+    position: relative;
+    top: -1px;
+}
+
+body>header .login .infomation>a span {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: -4px;
+    background-color: #f00;
+    width: 24px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 15px;
+    padding: 0px 5px;
+    box-sizing: content-box;
+    text-align: center;
+    color: #fff;
+    z-index: 99;
+}
+
+body>header .login .infomation .notice-dropdown {
+    width: 320px;
+    border: 1px solid #DCDCDC;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(89, 100, 105, 0.5);
+    left: unset;
+    top: 94%;
+    right: -100px;
+    padding: 0;
+    margin: 0;
+}
+
+body>header .login .infomation .notice-dropdown .arrow {
+    width: 30px;
+    height: 28px;
+    transform: rotateZ(45deg);
+    border: 1px solid #DCDCDC;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    position: absolute;
+    top: -14px;
+    right: 114px;
+}
+
+body>header .login .infomation .notice-dropdown .panel-heading {
+    height: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    border-bottom: 1px solid #DBDBDB;
+    border-radius: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body>header .login .infomation .notice-dropdown .panel-footer {
+    height: 36px;
+    border-top: 1px solid #DBDBDB;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #fff;
+}
+
+body>header .login .infomation .notice-dropdown .panel-footer a {
+    display: block;
+    line-height: 36px;
+    font-size: 12px;
+    color: #384258;
+    width: 100%;
+    text-align: right;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li {
+    height: 27px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li a {
+    font-size: 12px;
+    color: #384258;
+    line-height: unset;
+    font-weight: normal;
+    padding: 0;
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li a:hover {
+    background-color: unset;
+    color: unset;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li .more {
+    padding: 0 20px;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li>p {
+    flex: 1;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 12px;
+    color: #384258;
+    line-height: unset;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 0;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li>p a {
+    color: #1972A9;
+}
+
+body>header .login .infomation .notice-dropdown .panel-body li span {
+    font-size: 12px;
+    color: #AFAFAF;
+}
+
 body>header .dropdown-menu {
     background: #F3FAFE;
     padding: 10px 0;
@@ -430,7 +600,7 @@ body>header .dropdown-menu li a:hover {
 }
 
 body>header #open-google-translate b {
-    min-width: 70px;
+    min-width: 50px;
     width: 100%;
     display: inline-block;
     background-size: 20px 20px;
@@ -969,7 +1139,8 @@ footer .footer .wechat_qr_code {
     box-shadow: 0 0 12px 0 rgba(189, 189, 189, 0.5);
     border-radius: 5px;
 }
-.blog-details .contain-box{
+
+.blog-details .contain-box {
     margin-top: 138px;
 }
 
@@ -1479,7 +1650,8 @@ footer .footer .wechat_qr_code {
     padding: 0 10px;
     padding-right: 20px;
 }
-.blog-details .contain-box .contain-body{
+
+.blog-details .contain-box .contain-body {
     padding: 0;
 }
 

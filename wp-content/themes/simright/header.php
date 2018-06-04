@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="https://oss.simright.com/img/favicon.ico">
     <link rel="stylesheet" href="https://oss.simright.com/static/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v11.0" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v12.0" type="text/css" media="screen" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,6 +48,22 @@
                     <a href="/register" class="btn btn-round"><b><?php pll_e('Sign Up'); ?></b></a></p> 
                     <?php endif ?>
                 </div>
+                <li class="dropdown infomation">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div><img class="avatar" src="https://oss.simright.com/images/header-clock.svg" alt=""></div>                         
+                        <span class="hide notice-number"></span>
+                    </a>
+                    <div class="dropdown-menu position-right notice-dropdown" role="menu">
+                        <div class="arrow"></div>
+                        <div class="panel-heading"><span> <?php pll_e('Notifications');?></span><img src="https://oss.simright.com/images/icon-notice-close.svg" alt=""></div>
+                        <ul class="panel-body" role="menu">
+                            <b><?php pll_e('No news');?></b>
+                        </ul>
+                        <div class="panel-footer">
+                            <a href="/user/notifications"><?php pll_e('More')?></a>
+                        </div>
+                    </div>
+                </li>
                 <li class="dropdown hide" data-logined = "" data-email = "">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="avatar" src="" alt="">                             
@@ -70,6 +86,22 @@
                 <div class="sign-btn hide">
                     <a id='signIn-sm'><img class="avatar" width="40" height="40" src="https://oss.simright.com/images/header-user-avatar.svg" alt=""> </a>
                 </div>
+                <li class="dropdown infomation">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div><img class="avatar" src="https://oss.simright.com/images/header-clock.svg" alt=""></div>                         
+                        <span class="hide notice-number"></span>
+                    </a>
+                    <div class="dropdown-menu position-right notice-dropdown" role="menu">
+                        <div class="arrow"></div>
+                        <div class="panel-heading"><span> <?php pll_e('Notifications');?></span><img src="https://oss.simright.com/images/icon-notice-close.svg" alt=""></div>
+                        <ul class="panel-body" role="menu">
+                            <b><?php pll_e('No news');?></b>
+                        </ul>
+                        <div class="panel-footer">
+                            <a href="/user/notifications"><?php pll_e('More')?></a>
+                        </div>
+                    </div>
+                </li>
                 <li class="dropdown hide" data-logined = "" data-email = "">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="avatar" src="" alt="">                             
@@ -152,12 +184,14 @@
                 <li class="dropdown">    
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="open-google-translate">
                         <span>
-                            <?php $ptranslations = pll_the_languages( array( 'show_flags' => 0,'show_names' => 0 ,'hide_current'=> 0,'hide_if_no_translation' => 1,'raw' => 1 ) );
-                                foreach($ptranslations as $value){
-                                    if($value['current_lang']){
-                                        echo '<b>'. $value['name'].'</b>' ;
-                                    }
-                            } ?>
+                            <?php  
+                                $lang = pll_current_language();
+                                if($lang == "en"){
+                                    echo "<b>EN</b>";
+                                }else{
+                                    echo "<b>中文</b>";
+                                }
+                            ?>
                         </span>
                     </a>
                     <ul class="dropdown-menu position-right" role="menu" id="open-google-translate-menu">
