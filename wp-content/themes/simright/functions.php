@@ -203,6 +203,9 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('Wallet','Wallet');
 	pll_register_string('Usage Overview','Usage Overview');
 	pll_register_string('Logout','Logout');
+	pll_register_string('Notifications','Notifications');
+	pll_register_string('No news','No news');
+	pll_register_string('More','More');
 	
 	
 

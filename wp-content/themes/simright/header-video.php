@@ -53,6 +53,22 @@
                     <a href="/register" class="btn btn-round"><b><?php pll_e('Sign Up'); ?></b></a></p> 
                     <?php endif ?>
                 </div>
+                <li class="dropdown infomation">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div><img class="avatar" src="https://oss.simright.com/images/header-clock.svg" alt=""></div>                         
+                        <span class="hide notice-number"></span>
+                    </a>
+                    <div class="dropdown-menu position-right notice-dropdown" role="menu">
+                        <div class="arrow"></div>
+                        <div class="panel-heading"><span> <?php pll_e('Notifications');?></span><img src="https://oss.simright.com/images/icon-notice-close.svg" alt=""></div>
+                        <ul class="panel-body" role="menu">
+                            <b><?php pll_e('No news');?></b>
+                        </ul>
+                        <div class="panel-footer">
+                            <a href="/user/notifications"><?php pll_e('More')?></a>
+                        </div>
+                    </div>
+                </li>
                 <li class="dropdown hide" data-logined = "" data-email = "">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="avatar" src="" alt="">                             
@@ -75,6 +91,22 @@
                 <div class="sign-btn hide">
                     <a id='signIn-sm'><img class="avatar" width="40" height="40" src="https://oss.simright.com/images/header-user-avatar.svg" alt=""> </a>
                 </div>
+                <li class="dropdown infomation">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <div><img class="avatar" src="https://oss.simright.com/images/header-clock.svg" alt=""></div>                         
+                        <span class="hide notice-number"></span>
+                    </a>
+                    <div class="dropdown-menu position-right notice-dropdown" role="menu">
+                        <div class="arrow"></div>
+                        <div class="panel-heading"><span> <?php pll_e('Notifications');?></span><img src="https://oss.simright.com/images/icon-notice-close.svg" alt=""></div>
+                        <ul class="panel-body" role="menu">
+                            <b><?php pll_e('No news');?></b>
+                        </ul>
+                        <div class="panel-footer">
+                            <a href="/user/notifications"><?php pll_e('More')?></a>
+                        </div>
+                    </div>
+                </li>
                 <li class="dropdown hide" data-logined = "" data-email = "">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img class="avatar" src="" alt="">                             
