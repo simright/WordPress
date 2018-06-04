@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="main-box video-details">
+<section class="main-box video-details blog-details">
     <section class="contain-box">
         <div class="contain-body">
             <div class="main-contain">

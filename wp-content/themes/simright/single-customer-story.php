@@ -3,7 +3,9 @@
 <section class="main-box partners-details customer-story-details">
     <div class="banner">
         <div>
-            <img class="partner-logo" src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+            <div class="img-wrap">
+                <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+            </div>
             <div>
                 <h2>
                     <?php the_title(); ?>

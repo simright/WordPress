@@ -724,7 +724,8 @@ footer .footer {
     align-items: unset;
     flex-wrap: wrap;
 }
-footer .footer >div{
+
+footer .footer>div {
     padding-right: 10px;
 }
 
@@ -798,7 +799,7 @@ footer .footer .wechat_qr_code {
 .blog-list .banner,
 .feature-list .banner,
 .partner-list .banner,
-.partners-details .banner{
+.partners-details .banner {
     height: 280px;
     background-image: url("https://oss.simright.com/images/about_us_banner.jpg");
     background-size: cover;
@@ -822,34 +823,25 @@ footer .footer .wechat_qr_code {
     flex-direction: column;
     color: #fff;
 }
-.joinus-list .banner{
+
+.joinus-list .banner {
     background-image: url("https://oss.simright.com/images/join_us_banner.jpg");
 }
-.news-list .banner{
+
+.news-list .banner {
     background-image: url("https://oss.simright.com/images/news_list_banner.jpg");
 }
-.feature-list .banner{
+
+.feature-list .banner {
     background-image: url("https://oss.simright.com/images/features_banner.jpg");
 }
-.blog-list .banner{
+
+.blog-list .banner {
     background-image: url("https://oss.simright.com/images/blog_list_banner.jpg");
 }
 
-.feature-list .about-feature {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.feature-list .about-feature table {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .partner-list .banner,
-.partners-details .banner{
+.partners-details .banner {
     background-image: url("https://oss.simright.com/images/partner-banner.png");
 }
 
@@ -907,8 +899,8 @@ footer .footer .wechat_qr_code {
 .joinus-list .banner h2,
 .blog-list .banner h2,
 .feature-list .banner h2,
-.partner-list .banner h2, 
-.partners-details .banner h2{
+.partner-list .banner h2,
+.partners-details .banner h2 {
     height: 58px;
     line-height: 58px;
     width: 236px;
@@ -920,16 +912,18 @@ footer .footer .wechat_qr_code {
     margin-bottom: 26px;
     border-radius: 5px;
 }
-.partners-details .banner h2{
+
+.partners-details .banner h2 {
     width: auto;
+    padding: 0 40px;
 }
 
 .video-list .banner p,
 .news-list .banner p,
 .joinus-list .banner p,
-.blog-list .banner p ,
+.blog-list .banner p,
 .partner-list .banner p,
-.partners-details .banner p{
+.partners-details .banner p {
     font-size: 20px;
 }
 
@@ -954,6 +948,56 @@ footer .footer .wechat_qr_code {
     padding-bottom: 30px;
 }
 
+.news-list .contain-box,
+.blog-list .contain-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 155px;
+}
+
+.joinus-list .contain-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-details .contain-box,
+.partners-details .contain-box {
+    background-color: #fff;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 30px 40px;
+    box-shadow: 0 0 12px 0 rgba(189, 189, 189, 0.5);
+    border-radius: 5px;
+}
+.blog-details .contain-box{
+    margin-top: 138px;
+}
+
+.partners-details .contain-box hr {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.partners-details .list-contain h2 {
+    font-size: 24px;
+    color: #1972A9;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.feature-list .about-feature {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feature-list .about-feature table {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .video-details .post-content img,
 .video-details .list-contain img {
     max-width: 100%;
@@ -970,13 +1014,6 @@ footer .footer .wechat_qr_code {
 .video-details .wp-video video {
     width: 100% !important;
     height: auto;
-}
-
-.news-list .contain-box,
-.blog-list .contain-box {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 155px;
 }
 
 .news-list .contain-box .news-item-wrap,
@@ -1079,11 +1116,6 @@ footer .footer .wechat_qr_code {
 
 .blog-list .contain-box .blog-item .content {
     height: auto;
-}
-
-.joinus-list .contain-box {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .joinus-list .contain-box .email-to {
@@ -1447,6 +1479,9 @@ footer .footer .wechat_qr_code {
     padding: 0 10px;
     padding-right: 20px;
 }
+.blog-details .contain-box .contain-body{
+    padding: 0;
+}
 
 .comment-content {
     display: -webkit-box;
@@ -1464,73 +1499,313 @@ footer .footer .wechat_qr_code {
     align-items: flex-start;
 }
 
-
 /* 合作伙伴 */
-.partner-list .about-partner{
+
+.partner-list .about-partner {
     max-width: 1200px;
     margin: 80px auto;
 }
 
-.partner-list .partner-item{
+.partner-list .partner-item {
     background-color: #FFFFFF;
-    border: 1px solid #D2D2D2;
-    margin: 15px 6px;
-    width: 280px;
+    margin: 15px 11px;
+    width: 216px;
+    height: 216px;
+    padding: 35px;
     display: inline-block;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
-.partner-list .partner-item .img-wrap{
-    width: 280px;
-    height: 207px;
+.partner-list .partner-item:hover {
+    box-shadow: 0 0 12px 0 rgba(189, 189, 189, 0.5);
+}
+
+.partner-list .partner-item .img-wrap {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #D2D2D2;
 }
 
-.partner-list .partner-item .img-wrap img{
+.partner-list .partner-item .img-wrap img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.partner-list .partner-item span{
-    display: block;
-    height: 70px;
-    line-height: 70px;
-    font-size: 18px;
-    color: #1972A9;
-    font-weight: bold;
-    text-align: center;
+.partners-details .contain-box .img-wrap {
+    width: 114px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
 
-.partners-details .contain-box{
-    background-color: #fff;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 50px 40px;
+.partners-details .partner-logo {
+    max-width: 100%;
+    max-height: 100%;
 }
-.partners-details .partner-logo{
-    max-width: 280px;
-    float: left;
-    margin-right: 20px;
+
+.partners-details .contain-wrap {
+    display: flex;
+    justify-content: space-between;
 }
-.partners-details .post-header{
-    margin-bottom: 25px;
-    font-size: 24px;
-    color: #1972A9;
+
+.partners-details .contain-text {
+    flex: 1;
+    margin-left: 30px;
 }
-.partners-details .main-contain>a{
+
+.partners-details .main-contain>a {
     display: block;
     text-align: right;
 }
-.partners-details .list-contain{
-    color:#7F8081;
+
+.partners-details .list-contain {
+    color: #7F8081;
     line-height: 20px;
     overflow: hidden;
 }
 
+/* 用户故事 */
 
+.customer-list {
+    background-color: #F2F2F2;
+}
+
+.customer-list .banner {
+    width: 100%;
+    height: 581px;
+    background-image: url('https://oss.simright.com/images/cms-customer-story.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-list .about-customer {
+    max-width: 1200px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.customer-list .about-customer>h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #1972A9;
+    line-height: 34px;
+}
+
+.customer-list .about-customer>hr {
+    margin-top: 12px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-color: #C9C6C6;
+}
+
+.customer-list .customer-item {
+    width: 280px;
+    height: 360px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    margin: 0 8px 30px 8px;
+}
+
+.customer-list .customer-item:hover {
+    box-shadow: 0 0 12px 0 rgba(189, 189, 189, 0.5);
+}
+
+.customer-list .customer-item a {
+    color: #9B9B9B;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.customer-list .customer-item a:hover {
+    text-decoration: unset;
+}
+
+.customer-list .customer-item p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.customer-list .customer-item .img-wrap {
+    height: 240px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.customer-list .img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.customer-list .item-title {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #1972A9;
+    margin-bottom: 10px;
+}
+
+.customer-list .siema {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.customer-list .siema .pre {
+    width: 0;
+    height: 0;
+    padding: 0;
+    background-color: unset;
+    border: 20px solid transparent;
+    border-color: transparent rgba(108, 183, 229, 1) transparent transparent;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.customer-list .siema .next {
+    width: 0;
+    height: 0;
+    padding: 0;
+    background-color: unset;
+    border: 20px solid transparent;
+    border-color: transparent transparent transparent rgba(108, 183, 229, 1);
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.customer-list .siema .contain {
+    width: 100%;
+}
+
+.customer-list .siema .story-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.customer-list .siema .img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: unset;
+    margin-bottom: 10px;
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.customer-list .siema h2 {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.customer-list .siema p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 27px;
+}
+
+.customer-list .siema .contain button {
+    padding: 10px 50px;
+    border-radius: 86px;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+.customer-list .siema button a {
+    color: #218BCC;
+}
+
+.customer-story-details .banner {
+    background-image: url('https://oss.simright.com/images/cms-customer-story-banner.jpg');
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.customer-story-details .banner>div {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.customer-story-details .banner .img-wrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0E0E0;
+}
+
+.customer-story-details .banner .img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.customer-story-details .banner div h2 {
+    border: none;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: auto;
+    line-height: 24px;
+    text-align: left;
+}
+
+.customer-story-details .banner div p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.customer-story-details .list-contain h2 {
+    margin-bottom: 30px;
+}
 
 /* 评论 */
 
@@ -2260,28 +2535,34 @@ img.aligncenter,
 }
 
 /* 家具专题 */
-.page-furniture{
+
+.page-furniture {
     background-color: #fff;
 }
-.page-furniture section{
+
+.page-furniture section {
     max-width: 1200px;
     margin: 0 auto;
 }
-.page-furniture .banner{
+
+.page-furniture .banner {
     width: 100%;
     max-width: unset;
 }
-.page-furniture .banner img{
+
+.page-furniture .banner img {
     width: 100%;
 }
-.page-furniture .furniture-item .title{
+
+.page-furniture .furniture-item .title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.page-furniture .furniture-item .title span{
+
+.page-furniture .furniture-item .title span {
     display: block;
     height: 50px;
     line-height: 50px;
@@ -2289,29 +2570,34 @@ img.aligncenter,
     color: #6B6B6B;
     padding: 0 13px;
 }
-.page-furniture .furniture-item .content{
+
+.page-furniture .furniture-item .content {
     display: flex;
     justify-content: flex-start;
     align-items: unset;
     height: 634px;
     overflow: hidden;
 }
-.page-furniture .furniture-item .content .left{
+
+.page-furniture .furniture-item .content .left {
     width: 380px;
     height: 604px;
     margin-bottom: 30px;
     background-color: #F4F6F8;
 }
-.page-furniture .content .left .cover-img img{
+
+.page-furniture .content .left .cover-img img {
     width: 100%;
 }
-.page-furniture .content .left h4{
+
+.page-furniture .content .left h4 {
     margin-top: 50px;
     font-size: 36px;
     color: #6B6B6B;
     text-align: center;
 }
-.page-furniture .furniture-item .content .list{
+
+.page-furniture .furniture-item .content .list {
     flex: 1;
     display: flex;
     justify-content: flex-start;
@@ -2319,30 +2605,33 @@ img.aligncenter,
     flex-wrap: wrap;
 }
 
-.page-furniture .furniture-item .content .list-item{
+.page-furniture .furniture-item .content .list-item {
     width: 250px;
     height: 289px;
     margin-bottom: 30px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: #fff;
-    box-shadow: 0px 2px 9px 0px rgba(190,190,190,0.3);
+    box-shadow: 0px 2px 9px 0px rgba(190, 190, 190, 0.3);
     text-align: center;
     text-decoration: unset;
     cursor: pointer;
 }
-.page-furniture .furniture-item .content .list-item h5{
+
+.page-furniture .furniture-item .content .list-item h5 {
     margin-top: 12px;
     margin-bottom: 7px;
     font-size: 14px;
     color: #464646;
 }
-.page-furniture .furniture-item .content .list-item p{
+
+.page-furniture .furniture-item .content .list-item p {
     margin: 0;
     font-size: 12px;
     color: #9B9B9B;
 }
-.page-furniture .list-item .cover-img{
+
+.page-furniture .list-item .cover-img {
     width: 250px;
     height: 230px;
     background-color: #F4F6F8;
@@ -2351,230 +2640,47 @@ img.aligncenter,
     justify-content: center;
     align-items: center;
 }
+
 .page-furniture .list-item .cover-img img {
     display: block;
     max-width: 100%;
     max-height: 100%;
 }
+
 .page-furniture .chair {
     padding-bottom: 100px;
 }
-/* 用户故事 */
-.customer-list{
-    background-color: #F2F2F2;
-}
-.customer-list .banner{
-    width: 100%;
-    height: 581px;
-    background-image: url('https://oss.simright.com/images/cms-customer-story.jpg');
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.customer-list .about-customer{
-    max-width: 1200px;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    display: flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-wrap:wrap;
-}
-.customer-list .about-customer >h2{
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    color:#1972A9;
-    line-height: 34px;
-}
-
-.customer-list .about-customer >hr{
-    margin-top: 12px;
-    margin-bottom:50px;
-    width: 100%;
-    border-color: #C9C6C6;
-}
-
-.customer-list .customer-item{
-    width: 280px;
-    height: 260px;
-    margin: 0 8px 30px 8px;
-}
-.customer-list .customer-item a {
-    color: #9B9B9B;
-    font-size: 12px;
-    line-height: 12px;
-}
-.customer-list .customer-item p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.customer-list .img-wrap{
-    height: 207px;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    background-color:#fff;
-    margin-bottom:10px;
-}
-.customer-list .img-wrap img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.customer-list .item-title{
-    display: block;
-    font-size:16px;
-    line-height:22px;
-    color:#1972A9;
-    margin-bottom: 8px;
-}
-.customer-list .siema {
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-.customer-list .siema .pre {
-    width: 0;
-    height: 0;
-    padding: 0;
-    background-color: unset;
-    border: 20px solid transparent;
-    border-color: transparent rgba(108, 183, 229, 1) transparent transparent;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
-.customer-list .siema .next {
-    width: 0;
-    height: 0;
-    padding: 0;
-    background-color: unset;
-    border: 20px solid transparent;
-    border-color: transparent transparent transparent rgba(108, 183, 229, 1);
-    outline: none;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-}
-.customer-list .siema .contain{
-    width: 100%;
-}
-.customer-list .siema .story-item{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.customer-list .siema .img-wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: unset;
-    margin-bottom: 10px;
-    width: 580px;
-    height: 300px;
-    padding: 20px;
-    margin-right: 20px;
-}
-.customer-list .siema h2{
-    font-size: 28px;
-    color: #FFFFFF;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-.customer-list .siema  p {
-    font-size: 14px;
-    color: #fff;
-    line-height: 20px;
-    margin-bottom: 27px;
-}
-.customer-list .siema .contain button{
-    padding: 10px 50px;
-    border-radius: 86px;
-    background-color: #fff;
-    font-size: 24px;
-}
-.customer-list .siema button a{
-    color: #218BCC;
-}
-.customer-story-details .banner{
-    background-image:url('https://oss.simright.com/images/cms-customer-story-banner.jpg');
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-}
-.customer-story-details .banner >div{
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    display:flex;
-    justify-content:flex-start;
-    align-items:flex-start;
-    flex-direction: row;
-}
-.customer-story-details .banner div h2{
-    border: none;
-    font-size: 24px;
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: auto;
-    line-height: 24px;
-    text-align: left;
-}
-.customer-story-details .banner div p{
-    font-size: 14px;
-    line-height: 20px;
-}
-.customer-story-details .list-contain h2{
-    font-size: 24px;
-    color:#1972A9;
-    margin-bottom: 30px;
-}
-
-
 
 @media (max-width: 991px) {
-    .customer-list .banner{
+    .customer-list .banner {
         height: 300px;
     }
-    .customer-list .siema{
+    .customer-list .siema {
         padding-left: 0;
         padding-right: 0;
     }
-    .customer-list .siema .img-wrap,.customer-list .siema .pre,.customer-list .siema .next{
+    .customer-list .siema .img-wrap,
+    .customer-list .siema .pre,
+    .customer-list .siema .next {
         display: none;
     }
-    .customer-list .siema .contain button{
+    .customer-list .siema .contain button {
         padding: 5px;
     }
-    .customer-list .about-customer{
+    .customer-list .about-customer {
         justify-content: center;
     }
 }
 
 @media (max-width: 650px) {
-    .page-furniture .title img{
+    .page-furniture .title img {
         display: none;
     }
-    .page-furniture .furniture-item .content{
+    .page-furniture .furniture-item .content {
         height: auto;
         flex-wrap: wrap;
     }
-    .page-furniture .furniture-item .content .list{
+    .page-furniture .furniture-item .content .list {
         justify-content: center;
         align-items: center;
     }

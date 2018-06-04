@@ -10,7 +10,6 @@
                 <div class="img-wrap">
                     <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
                 </div>
-                <span><?php the_title(); ?></span>
             </a>
         </div>
     <?php endwhile; ?>
