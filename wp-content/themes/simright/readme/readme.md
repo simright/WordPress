@@ -27,7 +27,14 @@
 |
 |--合作伙伴
 |
-|--家具
+|--用户故事
+|
+|--直播（live）
+|	|--即将进行的直播（upcoming-live）
+|	|
+|	|--已经结束的直播（completed-live）
+|
+|--家具page
 |   |--桌子
 |   |--椅子
 |
@@ -59,7 +66,46 @@
 ![list](./img/partner1.png)
 ![details](./img/partner2.png)
 
+
+
+## 七、用户故事
+
+图片比例必须1:1
+
+## 八、直播
+
+1. 文章分类选择“直播”+“即将进行的直播”或”直播“+”已经结束的直播“
+
+**分类目录说明**
+
+```markdown
+|--直播（live）
+|	|--即将进行的直播（upcoming-live）
+|	|
+|	|--已经结束的直播（completed-live）
+
+```
+
+
+
+**字段说明**
+
+```
+time:直播时间
+video-link：已经结束的直播视频链接
+applicable-people：直播适用对象
+number：已报名人数
+person-name：直播人名字
+person-title:直播人头衔
+person-avatar：直播人头像
+person-info：直播人信息（换行使用 </br>）
+
+```
+
+
+
 ## 七、家具专题
+
 家具分类下的文章用于家具专题。使用page furniture模板，无父级
 >
 > 缩略图必填
