@@ -252,6 +252,8 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('ren','人');
 	pll_register_string('li ji bao ming','立即报名');
 	pll_register_string('zhi bo nei rong','直播内容');
+	pll_register_string('li ji guan kan','立即观看');
+	pll_register_string('yi jie shu','已结束');
 
 }
 

@@ -99,6 +99,7 @@ person-name：直播人名字
 person-title:直播人头衔
 person-avatar：直播人头像
 person-info：直播人信息（换行使用 </br>）
+video-link: 直播中（链接）
 
 ```
 

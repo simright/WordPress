@@ -23,7 +23,18 @@
                             <span class="label-infos"><?php pll_e('已报名'); ?>:</span>
                             <span><b><?php echo get_post_meta($post->ID, "number", $single = true) ?></b><?php pll_e('人'); ?></span>
                         </div>
-                        <a href="#" class="btn btn-light btn-sm"><?php pll_e('立即报名'); ?></a>
+                        <?php $categorys = get_the_category();?>
+                        <?php foreach ($categorys as $category) :?>
+                            <?php if($category->category_nicename == "upcoming-live"): ?>
+                                <?php if(get_post_meta($post->ID, "living-link", $single = true) != ""):?>
+                                    <a href="<?php echo get_post_meta($post->ID, "living-link", $single = true) ?>" class="btn btn-light btn-sm"><?php pll_e("立即观看"); ?></a>
+                                <?php else:?>
+                                    <a href="/live-sign-up?post-name=<?php the_title(); ?>" class="btn btn-light btn-sm"><?php pll_e("立即报名"); ?></a>
+                                <?php endif ?>
+                            <?php elseif($category->category_nicename == "completed-live"): ?>
+                                <a href="<?php echo get_post_meta($post->ID, "video-link", $single = true) ?>" class="btn btn-grey btn-sm"><?php pll_e("已结束"); ?></a>
+                            <?php endif ?>
+                        <?php endforeach ?>
                     </div>
                 </div>
                 <div class="contain-bottom">
