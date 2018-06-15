@@ -24,6 +24,10 @@
     {
     include(TEMPLATEPATH . '/single-customer-story.php');
     }
+    elseif ( $rootCategory === 'live')
+    {
+    include(TEMPLATEPATH . '/single-live.php');
+    }
     else{
         echo $rootCategory;
         return;

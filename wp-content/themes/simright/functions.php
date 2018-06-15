@@ -241,6 +241,20 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('FEATURES','FEATURES');
 	pll_register_string('Features','Features');
 	pll_register_string('FEATURED CUSTOMER STORIES','FEATURED CUSTOMER STORIES');
+
+	pll_register_string('LIVE','LIVE');
+	pll_register_string('yi jing jie shu de zhi bo','yi jing jie shu de zhi bo');
+	pll_register_string('ji jiang jin xing de zhi bo','ji jiang jin xing de zhi bo');
+	pll_register_string('fan hui zhi bozhong xin','返回直播中心');
+	pll_register_string('zhi bo shi jian','直播时间');
+	pll_register_string('shi yong ren qun','适用人群');
+	pll_register_string('yi bao ming','已报名');
+	pll_register_string('ren','人');
+	pll_register_string('li ji bao ming','立即报名');
+	pll_register_string('zhi bo nei rong','直播内容');
+	pll_register_string('li ji guan kan','立即观看');
+	pll_register_string('yi jie shu','已结束');
+
 }
 
 /** 搜索表单 */
