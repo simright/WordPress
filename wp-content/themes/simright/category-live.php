@@ -27,7 +27,7 @@
                 </div>
             <?php endwhile; ?>
             <?php else : ?>
-                <h3 class="title"><a href="#" rel="bookmark">NOT FOUND</a></h3>
+                <h3 class="title"></h3>
             <?php endif; ?>
         </div>
         <div class="ended-live">
@@ -54,7 +54,7 @@
                 </div>
             <?php endwhile; ?>
             <?php else : ?>
-                <h3 class="title"><a href="#" rel="bookmark">NOT FOUND</a></h3>
+                <h3 class="title"></h3>
             <?php endif; ?>
         </div>
     </section>
