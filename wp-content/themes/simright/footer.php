@@ -72,6 +72,7 @@
         <p class="text-center">
             Copyright © 2018 Simright Information Technology Co.,Ltd. All Rights Reserved.
         <p class="text-center">Powered By <a rel="external" title="WordPress" class="link" href="http://wordpress.org/">WordPress</a></p>
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273840646'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273840646%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
     </section>
 </footer>
 </body>
