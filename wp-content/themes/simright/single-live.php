@@ -19,6 +19,10 @@
                             <span class="label-infos"><?php pll_e('适用人群'); ?>:</span>
                             <span><?php echo get_post_meta($post->ID, "applicable-people", $single = true) ?></span>
                         </div>
+                        <div class="tips">
+                            <span class="label-infos"><?php pll_e('语言'); ?>:</span>
+                            <span><?php echo get_post_meta($post->ID, "live-language", $single = true) ?></span>
+                        </div>
                         <div class="tips number">
                             <span class="label-infos"><?php pll_e('已报名'); ?>:</span>
                             <span><b><?php echo get_post_meta($post->ID, "number", $single = true) ?></b><?php pll_e('人'); ?></span>

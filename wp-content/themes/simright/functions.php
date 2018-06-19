@@ -254,7 +254,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('zhi bo nei rong','直播内容');
 	pll_register_string('li ji guan kan','立即观看');
 	pll_register_string('yi jie shu','已结束');
-
+	pll_register_string('language','语言');
 }
 
 /** 搜索表单 */
