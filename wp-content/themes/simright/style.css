@@ -1592,7 +1592,7 @@ footer .footer .wechat_qr_code {
 
 .partner-list .partner-item {
     background-color: #FFFFFF;
-    margin: 15px 11px;
+    margin: 15px 10px;
     width: 216px;
     height: 216px;
     padding: 35px;
@@ -2025,12 +2025,14 @@ footer .footer .wechat_qr_code {
     color:#5A5A5A;
 }
 .live-details .live-info .label-infos{
-    min-width: 76px;
+    min-width: 100px;
+    margin-right: 10px;
+    font-weight: bold;
 }
 .live-details .live-info .number{
     height: 40px;
-    margin-top: 12px;
-    margin-bottom: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 10px;
     font-size: 16px;
     line-height: 40px;

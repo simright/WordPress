@@ -92,15 +92,15 @@
 
 ```
 time:直播时间
-video-link：已经结束的直播视频链接
+live-language：语言
 applicable-people：直播适用对象
 number：已报名人数
 person-name：直播人名字
 person-title:直播人头衔
 person-avatar：直播人头像
 person-info：直播人信息（换行使用 </br>）
-video-link: 直播中（链接）
-
+video-link：已经结束的直播视频链接
+living-link: 直播中（链接）
 ```
 
 
