@@ -30,7 +30,7 @@
                             <div class="img-wrap">
                                 <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
                             </div>
-                            <div>
+                            <div class="story-content">
                                 <h2><?php the_title(); ?></h2>
                                 <?php the_excerpt(); ?>
                                 <button>
