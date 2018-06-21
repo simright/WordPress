@@ -48,20 +48,37 @@
     <section class="about-customer">
         <h2><?php pll_e('FEATURED CUSTOMER STORIES')?></h2>
         <hr>
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="customer-item">
-                <a href="<?php the_permalink(); ?>">
-                    <div class="img-wrap">
-                        <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
-                    </div>
-                    <span class="item-title"><?php the_title(); ?></span>
-                    <?php the_excerpt(); ?>
-                </a>
-            </div>
-        <?php endwhile; ?>
-        <?php else : ?>
-            <h3 class="title"><a href="#" rel="bookmark">NOT FOUND</a></h3>
-        <?php endif; ?>
+        <?php if(pll_current_language()=="zh"): ?>
+            <?php $blog_cat_ID = get_cat_ID("用户故事"); ?>
+            <?php query_posts("cat=$blog_cat_ID"); ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="customer-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="img-wrap">
+                            <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+                        </div>
+                        <span class="item-title"><?php the_title(); ?></span>
+                        <?php the_excerpt(); ?>
+                    </a>
+                </div>
+            <?php endwhile; ?>
+            <?php endif; ?>
+        <?php else: ?>
+            <?php $blog_cat_ID = get_cat_ID("Customer story"); ?>
+            <?php query_posts("cat=$blog_cat_ID"); ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="customer-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="img-wrap">
+                            <img src="<?php post_thumbnail_src('thumbnail'); ?>" alt="">
+                        </div>
+                        <span class="item-title"><?php the_title(); ?></span>
+                        <?php the_excerpt(); ?>
+                    </a>
+                </div>
+            <?php endwhile; ?>
+            <?php endif; ?>
+        <?php endif ?>
     </section>
 </section>
     <script src="https://oss.simright.com/static/jquery.min.js"></script>
