@@ -171,6 +171,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><b><?php pll_e('Learning'); ?></b>&nbsp; <i class="glyphicon glyphicon-chevron-down"></i></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/<?php echo pll_current_language() ?>/category/video"><?php pll_e('Video Library'); ?></a></li>
+                        <li><a href="/<?php echo pll_current_language() ?>/category/live"><?php pll_e('Webinars'); ?></a></li>
                         <li><a href="/<?php echo pll_current_language() ?>/category/blogs"><?php pll_e('Blog'); ?></a></li>
                         <li><a href="/changelog" ><?php pll_e('Changelog'); ?></a></li>
                         <li><a href="/<?php echo pll_current_language() ?>/category/features" ><?php pll_e('Features'); ?></a></li>

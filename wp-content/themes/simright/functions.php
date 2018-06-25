@@ -192,6 +192,7 @@ if( function_exists('pll_register_string') ) {
 
 	pll_register_string('Learning','Learning');
 	pll_register_string('Video Library','Video Library');
+	pll_register_string('Webinars','Webinars');
 	pll_register_string('Blog','Blog');
 	pll_register_string('Nav News','News');
 	pll_register_string('Sign In','Sign In');
