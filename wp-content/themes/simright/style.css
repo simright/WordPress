@@ -3243,5 +3243,30 @@ img.aligncenter,
         padding: 30px 10px;
     }
 }
+@media (max-width: 991px){
+    /* 直播响应式 */
+    .live-details .main-contain{
+        margin-top: 50px;
+    }
+    .live-details .contain-top{
+        display: block;
+    }
+    .live-details .img-wrap{
+        width: 100%!important;
+        height: auto!important;
+        margin-bottom: 20px;
+    }
+    .live-details .contain-bottom{
+        display: block;
+    }
+    .live-details .contain-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .live-details .liver-info{
+        width: 100%;
+    }
+
+}
 
 /*# sourceMappingURL=test.css.map */
