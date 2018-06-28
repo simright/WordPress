@@ -190,12 +190,14 @@
                 <li class="dropdown">    
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="open-google-translate">
                         <span>
-                            <?php $ptranslations = pll_the_languages( array( 'show_flags' => 0,'show_names' => 0 ,'hide_current'=> 0,'hide_if_no_translation' => 1,'raw' => 1 ) );
-                                foreach($ptranslations as $value){
-                                    if($value['current_lang']){
-                                        echo '<b>'. $value['name'].'</b>' ;
-                                    }
-                            } ?>
+                            <?php  
+                                $lang = pll_current_language();
+                                if($lang == "en"){
+                                    echo "<b>EN</b>";
+                                }else{
+                                    echo "<b>中文</b>";
+                                }
+                            ?>
                         </span>
                     </a>
                     <ul class="dropdown-menu position-right" role="menu" id="open-google-translate-menu">
