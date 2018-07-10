@@ -880,7 +880,8 @@ footer .footer .wechat_qr_code {
 .feature-list .banner,
 .partner-list .banner,
 .partners-details .banner,
-.live-list .banner {
+.live-list .banner,
+.solutions-list .banner {
     height: 280px;
     background-image: url("https://oss.simright.com/images/about_us_banner.jpg");
     background-size: cover;
@@ -922,6 +923,9 @@ footer .footer .wechat_qr_code {
 }
 .live-list .banner{
     background-image: url("https://oss.simright.com/images/live_list_banner.jpg");
+}
+.solutions-list .banner{
+    background-image: url('https://oss.simright.com/images/csm_solutions_banner.jpg');
 }
 
 .partner-list .banner,
@@ -1856,7 +1860,7 @@ footer .footer .wechat_qr_code {
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
 }
 
@@ -1881,12 +1885,13 @@ footer .footer .wechat_qr_code {
 }
 
 .customer-story-details .banner div h2 {
-    border: none;
-    font-size: 24px;
+    height: auto;
     margin: 0;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: auto;
+    padding-left: 0;
+    border: none;
+    font-size: 24px;
     line-height: 24px;
     text-align: left;
 }
@@ -2106,6 +2111,105 @@ footer .footer .wechat_qr_code {
     color:#545454;
 }
 /* 直播结束 */
+
+/* 解决方案开始 */
+.solutions-list .contain-box{
+    background-color: #F2F2F2;
+}
+.solutions-list .contain-box>div{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.solutions-list .nav{
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E2E2E2;
+    display: flex;
+    justify-content: flex-start;
+}
+.solutions-list .nav a{
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    padding: 5px 14px;
+    border-radius: 30px;
+    color: #1972A9;
+}
+.solutions-list .nav .active a{
+    background-color: #1972A9;
+    color: #fff;
+}
+.solutions-list .press-content .solutions-item{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 13px 0 rgba(137, 155, 172, 0.5);
+    box-shadow: 2px;
+}
+.solutions-list .press-content .solutions-item >a{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: unset;
+}
+.solutions-list .solutions-item .img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    margin-right: 16px;
+}
+.solutions-list .solutions-item .img-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.solutions-list .solutions-item .content{
+    flex: 1;
+    margin-bottom: 14px;
+}
+.solutions-list .solutions-item .content .title{
+    margin-bottom: 14px;
+}
+.solutions-list .solutions-item .content .title h2{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #1972A9;
+}
+.solutions-list .solutions-item .content .title span{
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+    padding: 1px 11px;
+    border-radius: 29px;
+    font-size: 12px;
+    color: #989898;
+    background-color: #E6EDF6;
+}
+.solutions-list .solutions-item .content .info{
+    font-size: 14px;
+    color: #A5A8AB;
+    line-height: 16px;
+}
+.solutions-details .banner{
+    background-image: url('https://oss.simright.com/images/csm_solutions_banner.jpg');
+}
+.solutions-details .banner .img-wrap{
+    width: 200px;
+    height: 150px;
+    background-color: unset;
+}
+.solutions-details .banner .img-wrap img{
+    max-width: 100%;
+    max-height: 100%;
+    width: unset;
+    height: unset;
+}
+/* 解决方案结束 */
+
 
 /* 评论 */
 

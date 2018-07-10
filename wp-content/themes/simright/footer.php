@@ -117,13 +117,14 @@ $(function(){
     })
 })
 
-$(document).on('click','#pagination a:not(.noajx)',function(){
+$(document).on('click','#pagination a:not(.noajx)',function(e){
     var _this = $(this);
     var next = _this.attr("href").replace('?ajx=container','');
     var docH = $(document).height();
     var pagination = '#pagination'; // 下一页按钮标签id
     $(pagination).hide();
     $("#loadmore").show();
+
     $.ajax({
         url: next,
         beforeSend: function(){
@@ -138,7 +139,9 @@ $(document).on('click','#pagination a:not(.noajx)',function(){
 				$('.joinus-list .post-list').append($(data).find('.joinus-item'));    //追加加入我们内容
 			}else if($('.video-list .list-contain').length){
 				$('.video-list .list-contain').append($(data).find('.video-item'));    //追加视频内容
-			}
+			}else if($('.solutions-list').length){
+                $('.solutions-list .press-content').append($(data).find('.solutions-item'));
+            }
             $(pagination).html( $(data).find(pagination).html() );    //更新分页导航
             // 后退前进处理
             //var state = {url: next,title: $(data).find("title").text(),html: $(data).find('#ajx_content').html()};

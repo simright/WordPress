@@ -38,7 +38,14 @@
 |   |--桌子
 |   |--椅子
 |
-|
+|--解决方案（press-solutions）
+|   |
+|   |--(解决方案-结构分析)press-structural-analysis
+|   |--(解决方案-拓扑优化)press-topology-optimization
+|   |--(解决方案-前处理)press-pre-processor
+|   |--(解决方案-格式转化)press-converter
+|   |--(解决方案-在线协作)press-online-collaboration
+|   |--(解决方案-3D打印)press-3d-printing
 |
 ```
 
