@@ -17,22 +17,26 @@
         </ul>
         <div class="press-content">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="solutions-item">
-                    <a href="<?php the_permalink(); ?>">
-                        <div class="img-wrap">
-                            <img src="<?php echo post_thumbnail_src('thumbnail'); ?>" alt="">
+            <div class="solutions-item">
+                <?php if(get_post_meta($post->ID, "solutions-link", $single = true) != ""):?>
+                <a href="<?php echo get_post_meta($post->ID, "solutions-link", $single = true); ?>" target="_blank">
+                <?php else:?>
+                <a href="<?php the_permalink(); ?>">
+                <?php endif ?>
+                    <div class="img-wrap">
+                        <img src="<?php echo post_thumbnail_src('thumbnail'); ?>" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h2><?php echo the_title(); ?></h2>
+                            <span><?php echo get_post_meta($post->ID, "solution-tag", $single = true) ?></span>
                         </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2><?php echo the_title(); ?></h2>
-                                <span><?php echo get_post_meta($post->ID, "solution-tag-zh", $single = true) ?></span>
-                            </div>
-                            <div class="info">
-                                <?php echo the_excerpt();?>
-                            </div>
+                        <div class="info">
+                            <?php echo the_excerpt();?>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+            </div>
             <?php endwhile; ?>
             <?php endif; ?>
         </div>

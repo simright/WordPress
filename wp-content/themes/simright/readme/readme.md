@@ -124,6 +124,12 @@ living-link: 直播中（链接）
 
 ![furniture](./img/furniture.png)
 
+## 八、解决方案
+
+自定义标签：solution-tag
+
+自定义链接：solutions-link
+
 
 
 
