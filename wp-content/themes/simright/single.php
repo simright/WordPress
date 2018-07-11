@@ -28,6 +28,10 @@
     {
     include(TEMPLATEPATH . '/single-live.php');
     }
+    elseif ( $rootCategory === 'press-solutions')
+    {
+    include(TEMPLATEPATH . '/single-press-solutions.php');
+    }
     else{
         echo $rootCategory;
         return;

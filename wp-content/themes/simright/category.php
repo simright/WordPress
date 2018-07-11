@@ -32,6 +32,10 @@
     {
     include(TEMPLATEPATH . '/category-live.php');
     }
+    elseif ( $rootCategory === 'press-solutions')
+    {
+    include(TEMPLATEPATH . '/category-press-solutions.php');
+    }
     else{
         echo $rootCategory;
         return;
