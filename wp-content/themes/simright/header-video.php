@@ -137,13 +137,15 @@
                         <li><a href="/apps"><?php pll_e('Public Cloud Apps'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-simulator"><?php pll_e('Simulator - Structural Analysis'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-toptimizer"><?php pll_e('Toptimizer - Topology Optimization'); ?></a></li>
-                        <li class="sub-app"><a href="/apps/simright-webmesher"><b  data-i18n="base.nav.webmesher"><?php pll_e('WebMesher – Pre-processor'); ?></b><b style="font-size: 12px;position: relative;top: -6px;left: 5px;color: #ec4114;">Beta</b></a></li>
+                        <?php if(pll_current_language()=="zh"): ?>
+                        <li class="sub-app"><a href="http://www.easypdm.cn"  target="_blank">EasyPDM - 在线三维数据协同</a></li>
+                        <?php endif?>
+                        <li class="sub-app"><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-converter"><?php pll_e('CAE Converter - CAE model converter'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
-                        <li class="sub-app"><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
+                        <li class="sub-app"><a href="/apps/simright-webmesher"><b><?php pll_e('WebMesher – Pre-processor'); ?></b><b style="font-size: 12px;position: relative;top: -6px;left: 5px;color: #ec4114;">Beta</b></a></li>
                         <?php if(pll_current_language()=="zh"): ?>
-                        <li class="sub-app"><a href="http://www.easypdm.cn" target="_blank">EasyPDM - 在线三维数据协同</a></li>
                         <li><a href="/products/private_cloud_zh"><?php pll_e('Private Cloud Solutions') ?> </a></li>
                         <li><a href="/products/consulting-services">咨询服务</a></li>
                         <?php else: ?>
