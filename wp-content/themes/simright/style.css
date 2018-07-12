@@ -305,6 +305,10 @@ body>header .navbar>li {
     height: 100%;
 }
 
+body>header .navbar>li:hover .dropdown-menu{
+    display: block;
+}
+
 body>header .navbar>li>a {
     color: #707171;
     height: 100%;
