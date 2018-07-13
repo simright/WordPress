@@ -305,6 +305,10 @@ body>header .navbar>li {
     height: 100%;
 }
 
+body>header .navbar>li:hover .dropdown-menu{
+    display: block;
+}
+
 body>header .navbar>li>a {
     color: #707171;
     height: 100%;
@@ -1766,35 +1770,41 @@ footer .footer .wechat_qr_code {
 }
 
 .customer-list .siema .pre {
-    width: 0;
-    height: 0;
-    padding: 0;
-    background-color: unset;
-    border: 20px solid transparent;
-    border-color: transparent rgba(108, 183, 229, 1) transparent transparent;
-    outline: none;
+    width: 14px;
+    height: 22px;
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 10px;
+    right: auto;
+    border:  none;
+    background-position: center;
+    background-size: cover;
+    background-color: unset;
+    outline: none;
     transform: translateY(-50%);
+    background-image: url(https://oss.simright.com/images/arrow-left.svg?v1.0);
 }
 
 .customer-list .siema .next {
-    width: 0;
-    height: 0;
-    padding: 0;
-    background-color: unset;
-    border: 20px solid transparent;
-    border-color: transparent transparent transparent rgba(108, 183, 229, 1);
-    outline: none;
+    width: 14px;
+    height: 22px;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 10px;
+    left: auto;
+    border:  none;
+    background-position: center;
+    background-size: cover;
+    background-color: unset;
+    outline: none;
     transform: translateY(-50%);
+    background-image: url(https://oss.simright.com/images/arrow-right.svg?v1.0);
 }
 
 .customer-list .siema .contain {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .customer-list .siema .story-item {
