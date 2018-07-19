@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="https://oss.simright.com/img/favicon.ico">
     <link rel="stylesheet" href="https://oss.simright.com/static/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v21.0" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v22.0" type="text/css" media="screen" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -126,6 +126,16 @@
                         </span>
                     </a>
                 </li>
+                <?php if(pll_current_language()=="zh"): ?>
+                <li class="dropdown" data-active = "business">
+                    <a href="/business" class="dropdown-toggle"><span><b>业务方向</b> &nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/apps">仿真产品</a></li>
+                        <li><a href="/business/software-development">软件研发</a></li>
+                        <li><a href="/business/advanced-design">先进设计</a></li>
+                    </ul>
+                </li>
+                <?php endif?>
                 <li class="dropdown" data-active = "products">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><b><?php pll_e('Products'); ?></b> &nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -142,7 +152,6 @@
                         <li class="sub-app"><a href="/apps/simright-webmesher"><b><?php pll_e('WebMesher – Pre-processor'); ?></b><b style="font-size: 12px;position: relative;top: -6px;left: 5px;color: #ec4114;">Beta</b></a></li>
                         <?php if(pll_current_language()=="zh"): ?>
                         <li><a href="/products/private_cloud_zh"><?php pll_e('Private Cloud Solutions') ?> </a></li>
-                        <li><a href="/products/consulting-services">咨询服务</a></li>
                         <?php else: ?>
                         <li><a href="/products/private_cloud"><?php pll_e('Private Cloud Solutions') ?> </a></li>
                         <?php endif ?>
