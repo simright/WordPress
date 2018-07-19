@@ -993,7 +993,8 @@ footer .footer .wechat_qr_code {
 .feature-list .banner h2,
 .partner-list .banner h2,
 .partners-details .banner h2,
-.live-list .banner h2 {
+.live-list .banner h2,
+.solutions-list .banner h2 {
     height: 58px;
     line-height: 58px;
     width: 236px;
