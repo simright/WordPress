@@ -133,7 +133,8 @@
                 </li>
                 <?php if(pll_current_language()=="zh"): ?>
                 <li class="dropdown" data-active = "business">
-                    <a href="/business" class="dropdown-toggle"><span><b>业务方向</b> &nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></a>
+                    <a href="#" class="dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"><span><b>业务方向</b> &nbsp;<i class="fa fa-angle-down hidden-xs hidden-sm"></i></span></a>
+                    <a href="/business" class="dropdown-toggle hidden-sm hidden-xs" data-toggle="dropdown"><span><b>业务方向</b> &nbsp;<i class="fa fa-angle-down hidden-xs hidden-sm"></i></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/apps">仿真产品</a></li>
                         <li><a href="/business/software-development">软件研发</a></li>
