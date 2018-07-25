@@ -163,10 +163,7 @@
                         <span><b><?php pll_e('Resources'); ?></b>&nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <?php if(pll_current_language()=="zh"): ?>
                         <li><a href="/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('解决方案'); ?></a></li>
-                        <?php else: ?>
-                        <?php endif ?>
                         <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
                         <li><a href="/<?php echo pll_current_language() ?>/category/customer-story"><?php pll_e('User Stories') ?></a></li>
                         <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>

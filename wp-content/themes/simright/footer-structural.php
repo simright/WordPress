@@ -8,19 +8,20 @@
                 <ul>
                     <li><a href="/apps/simright-simulator"><?php pll_e('Simulator - Structural Analysis'); ?></a></li>
                     <li><a href="/apps/simright-toptimizer"><?php pll_e('Toptimizer - Topology Optimization'); ?></a></li>
-                    <li><a href="/apps/simright-webmesher"><b><?php pll_e('WebMesher – Pre-processor'); ?></b></a></li>
-                    <li><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
-                    <li><a href="/apps/simright-converter"><?php pll_e('CAE Converter - CAE model converter'); ?></a></li>
-                    <li><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
-                    <li><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                     <?php if(pll_current_language()=="zh"): ?>
                     <li class="sub-app"><a href="http://www.easypdm.cn" target="_blank">EasyPDM - 在线三维数据协同</a></li>
                     <?php endif ?>
+                    <li><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
+                    <li><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
+                    <li><a href="/apps/simright-converter"><?php pll_e('CAE Converter - CAE model converter'); ?></a></li>
+                    <li><a href="/apps/simright-cad-converter"><?php pll_e('CAD Converter - CAD model converter'); ?></a></li>
+                    <li><a href="/apps/simright-webmesher"><b><?php pll_e('WebMesher – Pre-processor'); ?></b></a></li>
                 </ul>
             </div>
             <div class="footer-resources">
                 <h4><?php pll_e('Resources'); ?></h4>
                 <ul>
+                    <li><a href="/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('解决方案'); ?></a></li>
                     <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
                     <li><a href="/<?php echo pll_current_language() ?>/category/customer-story"><?php pll_e('User Stories') ?></a></li>
                     <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
@@ -33,6 +34,8 @@
                 </h4>
                 <ul>
                     <li><a href="/<?php echo pll_current_language() ?>/category/video"><?php pll_e('Video Library'); ?></a></li>
+                    <li><a href="/<?php echo pll_current_language() ?>/category/live"><?php pll_e('Webinars'); ?></a></li>
+                    <li><a href="/<?php echo pll_current_language() ?>/category/blogs"><?php pll_e('Blog'); ?></a></li>
                     <li><a href="/changelog" ><?php pll_e('Changelog'); ?></a></li>
                     <li><a href="/<?php echo pll_current_language() ?>/category/features" ><?php pll_e('Features'); ?></a></li>
                 </ul>
@@ -72,6 +75,7 @@
         <p class="text-center">
             Copyright © 2018 Simright Information Technology Co.,Ltd. All Rights Reserved.
         <p class="text-center">Powered By <a rel="external" title="WordPress" class="link" href="http://wordpress.org/">WordPress</a></p>
+        <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273840646'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1273840646%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
     </section>
 </footer>
 </body>
@@ -79,7 +83,7 @@
     document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
 </script>
 <script src="https://oss.simright.com/static/jquery.min.js"></script>
-<script src="https://oss.simright.com/static/siema.min.js"></script>
+<script src="https://oss.simright.com/static/bootstrap.min.js"></script>
 <script>
     initSwiper()
     function initSwiper(){
