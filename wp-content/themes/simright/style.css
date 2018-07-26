@@ -1607,9 +1607,9 @@ footer .footer .wechat_qr_code {
     margin: 15px 10px;
     width: 216px;
     height: 216px;
-    padding: 35px;
     display: inline-block;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .partner-list .partner-item:hover {
