@@ -16,12 +16,6 @@ Tags: custom header, fixed width, two columns, widgets
     src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-ul,
-li,
-ol {
-    list-style: none !important;
-}
-
 body {
     font-family: Arial, Verdana, Tahoma, "Microsoft YaHei", Sans-serif;
     -webkit-font-smoothing: antialiased;
