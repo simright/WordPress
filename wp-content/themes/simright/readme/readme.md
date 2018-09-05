@@ -47,7 +47,14 @@
 |   |--(解决方案-在线协作)press-online-collaboration
 |   |--(解决方案-3D打印)press-3d-printing
 |
-```
+|--pdm详情页(pdm)
+|   |
+|   |--团队协作(team-collaboration)
+|   |--版本管理(version-management)
+|   |--模型对比(model-contrast)
+|   |--在线查看(online-view)
+|   |--计算结果查询(calculation-results-query)
+|   |--免安装(free-installation)
 
 ## 二、视频
 > 所有视频必须添加`缩略图`
@@ -129,6 +136,24 @@ living-link: 直播中（链接）
 自定义标签：solution-tag
 
 自定义链接：solutions-link
+
+## 九、pdm详情页
+自定义视频及链接：pdm-video --- 用于轮播视频链接（图片为视频截图，链接为视频播放链接）
+
+例子：
+```json
+[{"img":"https://oss.simright.com/imng.png","link":"https://www.simright.com1"},{"img":"https://oss.simright.com/imng.png","link":"https://www.simright.com2"},{"img":"https://oss.simright.com/imng.png","link":"https://www.simright.com3"}]
+```
+
+详情页中，
+
+上方标题为 `文章标题`
+
+标题下方描述为 `摘要`
+
+左侧轮播为上方`自定义字段`
+
+下方简介为`文章正文` 
 
 
 
