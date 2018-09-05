@@ -267,6 +267,8 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('nav_online_collaboration','online collaboration');
 	pll_register_string('nav_3d_printing','3d printing');
 
+	pll_register_string('Functional description','Functional description');
+
 
 }
 

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="main-box customer-list">
     <div class="banner">
-        <div class="swiper siema" id="next-process" >
+        <div class="swiper  " id="next-process" >
             <button class="pre"></button>
             <div class="contain" >
                 <?php if(pll_current_language()=="zh"): ?>

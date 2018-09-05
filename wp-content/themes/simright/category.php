@@ -36,6 +36,10 @@
     {
     include(TEMPLATEPATH . '/category-press-solutions.php');
     }
+    elseif ( $rootCategory === 'pdm')
+    {
+    include(TEMPLATEPATH . '/category-pdm.php');
+    }
     else{
         echo $rootCategory;
         return;
