@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="https://oss.simright.com/img/favicon.ico">
     <link rel="stylesheet" href="https://oss.simright.com/static/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v24.0" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v25.0" type="text/css" media="screen" />
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -144,7 +144,7 @@
                         <li class="sub-app"><a href="/apps/simright-simulator"><?php pll_e('Simulator - Structural Analysis'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-toptimizer"><?php pll_e('Toptimizer - Topology Optimization'); ?></a></li>
                         <?php if(pll_current_language()=="zh"): ?>
-                        <li class="sub-app"><a href="http://www.easypdm.cn"  target="_blank">EasyPDM - 在线三维数据协同</a></li>
+                        <li class="sub-app"><a href="/apps/easypdm"  target="_blank">EasyPDM - 在线三维数据协同</a></li>
                         <?php endif?>
                         <li class="sub-app"><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
