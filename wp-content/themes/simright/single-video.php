@@ -19,13 +19,14 @@
                     <p>error</p>
                 <?php endif; ?>
             </div>
-            <div class="comment-list" id="user-comment"> 
+            <!-- 评论 -->
+            <!-- <div class="comment-list" id="user-comment"> 
                 <?php
-                    if ( comments_open() || get_comments_number() ) {
+                    if ( comments_open() || get_comments_number()) {
                         comments_template();
                     }
                 ?>
-			</div>
+			</div> -->
         </div>
         <div class="slide-bar">
             <h3><?php pll_e('同类教程'); ?></h3>

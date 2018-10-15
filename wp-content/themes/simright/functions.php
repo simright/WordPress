@@ -95,10 +95,10 @@ if ( ! function_exists( 'simright_comment' ) ) :
 			case 'pingback':
 			case 'trackback':
 				// Display trackbacks differently than normal comments.
-		?>
-		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		<p><?php _e( 'Pingback:', 'simright' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'simright' ), '<span class="edit-link">', '</span>' ); ?></p>
-	<?php
+				?>
+				<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+				<p><?php _e( 'Pingback:', 'simright' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'simright' ), '<span class="edit-link">', '</span>' ); ?></p>
+				<?php
 				break;
 			default:
 				// Proceed with normal comments.
@@ -338,4 +338,17 @@ function add_comment_meta_values($comment_id) {
 		}
 	}
 add_action ('comment_post', 'add_comment_meta_values', 1);
+
+function getUserStroage(){ 
+	echo "<script>";
+	echo "localStorage.setItem('username','1111');";
+	echo "userInfo = localStorage.getItem('username')"; 
+	echo "</script>"; 
+	return userInfo;
+  } 
 ?>
+
+
+
+
+
