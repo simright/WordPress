@@ -88,34 +88,23 @@
 
 $(function(){
     $.ajax({
-        url:'/',
+        url:'/api/v1/auth',
         success:function(data){
-            var logined  =$(data).find('.meat-user-logined').html()
-            if(logined == "False"){
-                $('.sign-btn').removeClass('hide');
-                var locationPathname = window.location.pathname;
-                $('#signIn').on('click',function(){
-                    window.location.href = '/login?next=' + locationPathname;
-                })
-                $('#signIn-sm').on('click',function(){
-                    window.location.href = '/login?next=' + locationPathname;
-                })
-            }else{
-                $('.sign-btn').hide();
-                $('.login .dropdown').removeClass('hide')
-                var userName = $(data).find('.meta-user-name').html();
-                var userEmail = $(data).find('.meta-user-email').html();
-                var userId = $(data).find('.meta-user-id').html();
-                var userAvatar = $(data).find('.meta-user-avatar').html();
-                $('.avatar').attr('src',userAvatar)
-                $('.user-name').html(userName)
-                if($('#author') && $('#author').length > 0){
-                    $('#author').val(userName)
-                }
-                if($('#avatar') && $('#avatar').length > 0){
-                    $('#avatar').val(userAvatar)
-                }
-            }
+            console.log(data)
+            $('.login .dropdown').removeClass('hide')
+            var userAvatar = 'https://oss.simright.com/'+data.avatar;
+            $('.avatar').attr('src',userAvatar)
+            $('.user-name').html(data.name)
+        },
+        error:function(){
+            $('.sign-btn').removeClass('hide');
+            var locationPathname = window.location.pathname;
+            $('#signIn').on('click',function(){
+                window.location.href = '/login?next=' + locationPathname;
+            })
+            $('#signIn-sm').on('click',function(){
+                window.location.href = '/login?next=' + locationPathname;
+            })
         }
     })
 })
