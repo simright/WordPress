@@ -338,17 +338,4 @@ function add_comment_meta_values($comment_id) {
 		}
 	}
 add_action ('comment_post', 'add_comment_meta_values', 1);
-
-function getUserStroage(){ 
-	echo "<script>";
-	echo "localStorage.setItem('username','1111');";
-	echo "userInfo = localStorage.getItem('username')"; 
-	echo "</script>"; 
-	return userInfo;
-  } 
 ?>
-
-
-
-
-
