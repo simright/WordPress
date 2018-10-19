@@ -105,16 +105,17 @@
 **字段说明**
 
 ```
-time:直播时间
-live-language：语言
-applicable-people：直播适用对象
-number：已报名人数
-person-name：直播人名字
-person-title:直播人头衔
-person-avatar：直播人头像
-person-info：直播人信息（换行使用 </br>）
-video-link：已经结束的直播视频链接
-living-link: 直播中（链接）
+webinar-time:直播时间
+webinar-language：语言
+webinar-applicable-people：直播适用对象
+webinar-people-number：已报名人数
+webinar-person-name：直播人名字
+webinar-person-title:直播人头衔
+webinar-person-avatar：直播人头像
+webinar-person-info：直播人信息（换行使用 </br>）
+webinar-link：直播链接
+webinar-start：(true:直播中）（false:报名中）
+webinar-end-video-link：直播结束后视频链接
 ```
 
 

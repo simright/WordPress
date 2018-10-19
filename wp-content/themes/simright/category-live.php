@@ -19,7 +19,7 @@
                         <div class="img-cover" style="background-image:url('<?php echo post_thumbnail_src('thumbnail'); ?>');">
                             <h2><?php echo the_title()?></h2>
                         </div>
-                        <h3 class="time"><?php echo get_post_meta($post->ID, "time", $single = true) ?></h3>
+                        <h3 class="time"><?php echo get_post_meta($post->ID, "webinar-time", $single = true) ?></h3>
                         <div class="live-info">
                             <?php echo the_excerpt();?>
                         </div>
@@ -45,11 +45,11 @@
                         <div class="img-cover" style="background-image:url('<?php echo post_thumbnail_src('thumbnail'); ?>');">
                             <h2><?php echo the_title()?></h2>
                         </div>
-                        <h3 class="time"><?php echo get_post_meta($post->ID, "time", $single = true) ?></h3>
+                        <h3 class="time"><?php echo get_post_meta($post->ID, "webinar-time", $single = true) ?></h3>
                         <div class="live-info">
                             <?php echo the_excerpt();?>
                         </div>
-                        <a href="<?php echo get_post_meta($post->ID, "video-link", $single = true) ?>" class="btn btn-light" target="_blank"><?php pll_e('Watch Now')?></a>
+                        <a href="<?php echo get_post_meta($post->ID, "webinar-end-video-link", $single = true) ?>" class="btn btn-light" target="_blank"><?php pll_e('Watch Now')?></a>
                     </a>
                 </div>
             <?php endwhile; ?>
