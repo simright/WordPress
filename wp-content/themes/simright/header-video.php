@@ -149,7 +149,8 @@
                         <li class="sub-app"><a href="/apps/simright-simulator"><?php pll_e('Simulator - Structural Analysis'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-toptimizer"><?php pll_e('Toptimizer - Topology Optimization'); ?></a></li>
                         <?php if(pll_current_language()=="zh"): ?>
-                        <li class="sub-app"><a href="/apps/easypdm"  target="_blank">EasyPDM - 在线三维数据协同</a></li>
+                        <li class="sub-app"><a href="/apps/easypdm" target="_blank">EasyPDM - 在线三维数据协同</a></li>
+                        <li class="sub-app"><a href="/apps/simright-minsole">MinSole - 在线轻量化鞋垫设计软件</a></li>
                         <?php endif?>
                         <li class="sub-app"><a href="/apps/simright-threemagic"><?php pll_e('ThreeMagic - STL editor for 3D printing'); ?></a></li>
                         <li class="sub-app"><a href="/apps/simright-viewer"><?php pll_e('Viewer - CAD/CAE model viewer'); ?></a></li>
