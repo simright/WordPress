@@ -2781,36 +2781,53 @@ img.aligncenter,
 
 .site-tutotial-video>div {
     height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .site-tutotial-video .video-item {
     display: block;
+    width: 360px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-top: 50px;
     font-size: 16px;
     color: #605E5E;
     text-decoration: none;
     cursor: pointer;
 }
-
-.site-tutotial-video .video-item>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.site-tutotial-video .img-wrap{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
-
-.site-tutotial-video .video-item h2 {
+.site-tutotial-video .img-wrap>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.site-tutotial-video  a{
+    text-decoration: none;
+}
+.site-tutotial-video .video-item span {
+    display: block;
     margin: 0;
-    margin-bottom: 49px;
-    font-size: 36px;
-    color: #3A3A3A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1972A9;
 }
-
-.site-tutotial-video .video-item img {
-    width: 45%;
-}
-
-.site-tutotial-video .video-item .left {
-    width: 45%;
+.site-tutotial-video .video-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #6F7172;
 }
 
 /* 结构分析专题 */
