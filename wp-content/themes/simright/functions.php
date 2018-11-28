@@ -278,6 +278,10 @@ if( function_exists('pll_register_string') ) {
 
 	pll_register_string('Functional description','Functional description');
 
+	pll_register_string('error_tips','error_tips');
+	pll_register_string('error_goto','error_goto');
+	pll_register_string('error_home','error_home');
+
 
 }
 
