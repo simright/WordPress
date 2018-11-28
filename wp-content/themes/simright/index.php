@@ -8,4 +8,3 @@
         </div>
     </section>
 </section>
-<?php get_footer(); ?>

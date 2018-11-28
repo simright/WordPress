@@ -857,6 +857,7 @@ footer .footer .wechat_qr_code {
 
 .error-view .error-wrap {
     margin: 0 auto;
+    margin-bottom: 60px;
     padding-top: 90px;
     text-align: center;
 }
