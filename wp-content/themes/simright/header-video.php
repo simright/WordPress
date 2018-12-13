@@ -136,9 +136,9 @@
                     <a href="#" class="dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown"><span><b>业务方向</b> &nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></a>
                     <a href="/business" class="dropdown-toggle hidden-sm hidden-xs"><span><b>业务方向</b> &nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="/apps">仿真产品</a></li>
-                        <li><a href="/business/software-development">软件研发</a></li>
-                        <li><a href="/business/advanced-design">先进设计</a></li>
+                        <li><a href="/apps">在线仿真软件</a></li>
+                        <li><a href="/business/software-development">软件研发服务</a></li>
+                        <li><a href="/business/advanced-design">产品设计服务</a></li>
                     </ul>
                 </li>
                 <?php endif?>
