@@ -3234,9 +3234,6 @@ img.aligncenter,
         align-items: center;
         flex-wrap: wrap;
     }
-    .site-tutotial-video .video-item img {
-        width: 90%;
-    }
     .site-tutotial-video .video-item .left {
         width: 90%;
     }
