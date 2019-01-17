@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </li>
-            <li class="dropdown" data-logined = "" data-email = "">
+            <li class="dropdown hide" data-logined = "" data-email = "">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <img class="avatar" src="" alt="">                             
                 </a>
