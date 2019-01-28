@@ -7,6 +7,12 @@ window.onload = function () {
         $('.video-item').on('click',function(ele){
             e.source.postMessage({"href":$(this).data('href')}, '*');
         })
+        window.addEventListener('resize',function (){
+            height = document.body.clientHeight;
+            e.source.postMessage({"height":height}, '*');
+        })
     }, false);
+    
+    
 }
 </script>
