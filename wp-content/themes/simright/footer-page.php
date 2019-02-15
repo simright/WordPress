@@ -12,7 +12,5 @@ window.onload = function () {
             e.source.postMessage({"height":height}, '*');
         })
     }, false);
-    
-    
 }
 </script>

@@ -203,7 +203,7 @@
                     <div><img src="https://oss.simright.com/images/header-clock.svg" alt=""></div>                         
                     <span class="hide notice-number"></span>
                 </a>
-                <<div class="dropdown-menu position-right notice-dropdown" role="menu">
+                <div class="dropdown-menu position-right notice-dropdown" role="menu">
                     <div class="arrow"></div>
                     <div class="panel-heading"><span> <?php pll_e('Notifications');?></span><img src="https://oss.simright.com/images/icon-notice-close.svg" alt=""></div>
                     <ul class="panel-body" role="menu">
