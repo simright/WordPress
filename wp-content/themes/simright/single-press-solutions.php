@@ -17,7 +17,7 @@
     <section class="contain-box">
         <div class="contain-body">
             <div class="main-contain">
-                <a href="<?php echo get_option('home'); ?>/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('返回解决方案'); ?></a>
+                <a href="<?php echo get_option('home'); ?>/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('返回案例库'); ?></a>
                 <hr/>
                 <div class="list-contain">
                     <h2>

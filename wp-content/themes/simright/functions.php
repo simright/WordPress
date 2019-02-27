@@ -242,7 +242,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('fan hui bo ke zhong xin','返回博客中心');
 	pll_register_string('fan hui he zuo huo ban zhong xin','返回合作伙伴中心');
 	pll_register_string('fan hui yong hu gu shi zhong xin','返回用户故事中心');
-	pll_register_string('fan hui jie jue fang an','返回解决方案');
+	pll_register_string('fan hui jie jue fang an','返回案例库');
 	pll_register_string('tong lei jiao cheng','同类教程');
 	pll_register_string('Comments','Comments');
 	pll_register_string('Watch Now','Watch Now');
@@ -268,6 +268,7 @@ if( function_exists('pll_register_string') ) {
 	pll_register_string('language','语言');
 
 	pll_register_string('banner_jiejuefangan','解决方案');
+	pll_register_string('cases','案例库');
 	pll_register_string('nav_all','all');
 	pll_register_string('nav_structural_analysis','structural analysis');
 	pll_register_string('nav_topology_optimization','topology optimization');

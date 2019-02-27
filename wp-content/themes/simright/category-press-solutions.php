@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="main-box solutions-list">
     <div class="banner">
-        <h2 class="text-center"> <?php pll_e('解决方案'); ?></h2>
+        <h2 class="text-center"> <?php pll_e('案例库'); ?></h2>
     </div>
     <section class="contain-box">
     <div>

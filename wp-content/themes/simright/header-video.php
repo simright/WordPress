@@ -100,14 +100,11 @@
                         </li>
                         <li class="dropdown" data-active = "model-library">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span><b><?php pll_e('Resources'); ?></b>&nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                <span><b><?php pll_e('解决方案'); ?></b>&nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('解决方案'); ?></a></li>
-                                <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/customer-story"><?php pll_e('User Stories') ?></a></li>
-                                <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
-                                <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
+                                <li><a href="/<?php echo pll_current_language() ?>/category/press-solutions"><?php pll_e('案例库'); ?></a></li>
                             </ul>
                         </li>
                         <li data-active = "price">
@@ -119,10 +116,12 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><b><?php pll_e('Learning'); ?></b>&nbsp; <i class="glyphicon glyphicon-chevron-down"></i></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/<?php echo pll_current_language() ?>/category/video"><?php pll_e('Video Library'); ?></a></li>
-                                <li><a href="/<?php echo pll_current_language() ?>/category/live"><?php pll_e('Webinars'); ?></a></li>
+                                <li><a href="/resources/public-projects"><?php pll_e('Public Projects'); ?></a></li>
+                                <li><a href="/resources/model-library"><?php pll_e('Model Library'); ?></a></li>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/blogs"><?php pll_e('Blog'); ?></a></li>
-                                <li><a href="/changelog" ><?php pll_e('Changelog'); ?></a></li>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/features" ><?php pll_e('Features'); ?></a></li>
+                                <li><a href="/changelog" ><?php pll_e('Changelog'); ?></a></li>
+                                <li><a href="/<?php echo pll_current_language() ?>/category/live"><?php pll_e('Webinars'); ?></a></li>
                             </ul>
                         </li>
                         <li class="active dropdown" data-active = "about" style="position:relative;">
@@ -133,6 +132,7 @@
                                 <li><a href="/<?php echo pll_current_language() ?>/category/joinus"><?php pll_e('Join Us'); ?></a></li>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/news"><?php pll_e('News'); ?></a></li>
                                 <li><a href="/security"><?php pll_e('Security'); ?></a></li>
+                                <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
                             </ul>
                         </li>
                         <li class="dropdown">    
