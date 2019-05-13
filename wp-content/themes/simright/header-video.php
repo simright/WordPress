@@ -132,6 +132,9 @@
                                 <li><a href="/<?php echo pll_current_language() ?>/category/joinus"><?php pll_e('Join Us'); ?></a></li>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/news"><?php pll_e('News'); ?></a></li>
                                 <li><a href="/security"><?php pll_e('Security'); ?></a></li>
+                                <?php if(pll_current_language()=="zh"): ?>
+                                <li><a href="/qualification"><?php pll_e('Qualification'); ?></a></li>
+                                <?php endif?>
                                 <li><a href="/<?php echo pll_current_language() ?>/category/partners"><?php pll_e('Partners'); ?></a></li>
                             </ul>
                         </li>
