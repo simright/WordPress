@@ -14,6 +14,7 @@
             <li role="presentation" id="press-converter"><a href="/<?php echo pll_current_language()?>/category/press-solutions/type/press-converter/"><?php pll_e('converter')?></a></li>
             <li role="presentation" id="press-online-collaboration"><a href="/<?php echo pll_current_language()?>/category/press-solutions/type/press-online-collaboration/"><?php pll_e('online collaboration')?></a></li>
             <li role="presentation" id="press-3d-printing"><a href="/<?php echo pll_current_language()?>/category/press-solutions/type/press-3d-printing/"><?php pll_e('3d printing')?></a></li>
+            <li role="presentation" id="press-automotive"><a href="/<?php echo pll_current_language()?>/category/press-solutions/type/press-automotive/"><?php pll_e('Automotive')?></a></li>
         </ul>
         <div class="press-content">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
